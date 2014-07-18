@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 " my own plugins, yay!
 Plugin 'scrooloose/nerdtree'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -32,7 +33,10 @@ call vundle#end()            " required
 set rtp+=/opt/local/go/misc/vim
 filetype plugin indent on
 syntax on
+
+" Go configuration
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+let g:SuperTabDefaultCompletionType = "context"
 
 " NerdTree stuff
 au VimEnter * NERDTreeToggle
