@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,6 +38,7 @@ syntax on
 " Go configuration
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 let g:SuperTabDefaultCompletionType = "context"
+let g:syntastic_enable_go_checker = 1
 
 " NerdTree stuff
 au VimEnter * NERDTreeToggle
