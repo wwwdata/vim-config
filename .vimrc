@@ -11,10 +11,17 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " my own plugins, yay!
-Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/git-nerdtree'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
+Plugin 'majutsushi/tagbar'
+Plugin 'Townk/vim-autoclose'
+Plugin 'bling/vim-airline'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jnurmine/Zenburn'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mhinz/vim-startify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,5 +48,31 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:syntastic_enable_go_checker = 1
 
 " NerdTree stuff
-au VimEnter * NERDTreeToggle
 nmap <F3> :NERDTreeToggle<CR>
+
+" Tagbar
+nmap <F4> :TagbarToggle<CR>
+
+" Airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
+" Fugitive
+set modifiable
+
+" UTF-8 Encoding stuff
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  setglobal bomb
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
+
+" Other stuff
+set guifont=Source\ Code\ Pro\ for\ Powerline:h16 " Set default font
+set nu
+set background=dark
+colorscheme zenburn
