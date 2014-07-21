@@ -52,6 +52,34 @@ nmap <F3> :NERDTreeToggle<CR>
 
 " Tagbar
 nmap <F4> :TagbarToggle<CR>
+let g:tagbar_width = 75
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
 
 " Airline
 set laststatus=2
@@ -72,7 +100,8 @@ if has("multi_byte")
 endif
 
 " Other stuff
-set guifont=Source\ Code\ Pro\ for\ Powerline:h16 " Set default font
+" set guifont=Source\ Code\ Pro\ for\ Powerline:h16 " Set default font
+set guifont=Monaco\ for\ Powerline:h14
 set nu
 set background=dark
 colorscheme zenburn
