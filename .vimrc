@@ -23,6 +23,7 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mhinz/vim-startify'
 Plugin 'elzr/vim-json'
+Plugin 'evanmiller/nginx-vim-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
