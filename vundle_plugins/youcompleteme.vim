@@ -1,4 +1,5 @@
 ﻿if exists('g:vundle_installing_plugins')
-  Plugin 'ervandew/supertab'
+  Plugin 'Valloric/YouCompleteMe'
   finish
 endif
+

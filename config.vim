@@ -23,3 +23,4 @@ colorscheme zenburn
 " Behaviors
 " -----------------
 syntax enable
+set ts=4
