@@ -14,7 +14,7 @@ endif
 " -----------------
 " Color
 " -----------------
-set guifont=Monaco\ for\ Powerline:h14
+set guifont=Monaco\ for\ Powerline:h12
 set nu
 set background=dark
 colorscheme zenburn
