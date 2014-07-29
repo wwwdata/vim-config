@@ -20,8 +20,9 @@ endfunction
 function UpdateJsHintConf()
   let l:dir = expand('%:p:h')
   let l:jshintrc = s:find_jshintrc(l:dir)
-  let g:syntastic_javascript_jshint_conf = l:jshintrc
+  let g:syntastic_javascript_jshint_args = '--config ' . l:jshintrc
 endfunction
 
 au BufEnter * call UpdateJsHintConf()
 
+let g:syntastic_javascript_checkers = ['jshint']
