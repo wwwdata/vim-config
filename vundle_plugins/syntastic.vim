@@ -25,4 +25,5 @@ endfunction
 
 au BufEnter * call UpdateJsHintConf()
 
+let g:syntastic_enable_go_checker = 1
 let g:syntastic_javascript_checkers = ['jshint']
