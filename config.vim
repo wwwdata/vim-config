@@ -24,3 +24,7 @@ colorscheme zenburn
 " -----------------
 syntax enable
 set ts=4
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
