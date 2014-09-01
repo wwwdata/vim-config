@@ -23,6 +23,7 @@ colorscheme zenburn
 " Behaviors
 " -----------------
 syntax enable
+set backspace=indent,eol,start
 set ts=4
 set guioptions-=r
 set guioptions-=R
