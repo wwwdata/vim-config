@@ -25,6 +25,7 @@ colorscheme zenburn
 syntax enable
 set backspace=indent,eol,start
 set ts=4
+set sw=4
 set guioptions-=r
 set guioptions-=R
 set guioptions-=l
