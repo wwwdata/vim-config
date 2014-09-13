@@ -17,7 +17,16 @@ endif
 set guifont=Monaco\ for\ Powerline:h12
 set nu
 set background=dark
-colorscheme zenburn
+colorscheme railscasts
+
+"baycomb
+"bensday
+"blackboard
+"codeschool
+"darkburn
+"darkspectrum
+"native
+"railscasts
 
 " -----------------
 " Behaviors
