@@ -5,7 +5,4 @@ set rtp+=/opt/local/go/misc/vim
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 filetype plugin indent on
 syntax on
-
-" Go configuration
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
+let mapleader = ","
