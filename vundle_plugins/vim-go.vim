@@ -1,6 +1,7 @@
 if exists('g:vundle_installing_plugins')
   Plugin 'fatih/vim-go'
   autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
+  autocmd BufWritePost,FileWritePost *.go execute 'Fmt' | cwindow
   au FileType go nmap <Leader>s <Plug>(go-implements)
   au FileType go nmap <Leader>i <Plug>(go-info)
   au FileType go nmap <Leader>gd <Plug>(go-doc)
