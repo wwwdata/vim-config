@@ -4,4 +4,3 @@ filetype plugin indent off
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 filetype plugin indent on
 syntax on
-let mapleader = ","
