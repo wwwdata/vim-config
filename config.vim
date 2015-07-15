@@ -71,3 +71,5 @@ set colorcolumn=100
 
 " split windows
 nnoremap <leader>w <C-w>v<C-w>l
+nmap <leader>u :UltiSnipsEdit<CR>
+
