@@ -22,3 +22,4 @@ for file in split(glob('$HOME/.vim/vundle_plugins/custom/*.vim'), '\n')
 unlet g:vundle_installing_plugins
 
 call vundle#end()
+filetype plugin indent on
