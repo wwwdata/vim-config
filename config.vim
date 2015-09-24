@@ -7,7 +7,6 @@ if has("multi_byte")
   endif
   set encoding=utf-8
   setglobal fileencoding=utf-8
-  setglobal bomb
   set fileencodings=ucs-bom,utf-8,latin1
 endif
 
@@ -51,6 +50,7 @@ set laststatus=2
 set relativenumber
 set ignorecase
 set smartcase
+set nobomb
 
 " search highlighting
 set incsearch
@@ -67,7 +67,7 @@ vnoremap <tab> %
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=100
+set colorcolumn=120
 
 " split windows
 nnoremap <leader>w <C-w>v<C-w>l
