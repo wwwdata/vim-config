@@ -60,10 +60,6 @@ set hlsearch
 " clear search results
 nnoremap <leader><space> :noh<cr>
 
-" fast move with tab between brackets
-nnoremap <tab> %
-vnoremap <tab> %
-
 set wrap
 set textwidth=79
 set formatoptions=qrn1
@@ -73,3 +69,5 @@ set colorcolumn=120
 nnoremap <leader>w <C-w>v<C-w>l
 nmap <leader>u :UltiSnipsEdit<CR>
 
+" map .spec to coffee filetype
+au Bufread,BufNewFile *.spec set filetype=coffee
