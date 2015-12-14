@@ -1,4 +1,4 @@
 if exists('g:vundle_installing_plugins')
-  Plugin 'mileszs/ack.vim'
+  Plugin 'rking/ag.vim'
   finish
 endif
