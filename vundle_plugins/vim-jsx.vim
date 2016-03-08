@@ -3,4 +3,4 @@ if exists('g:vundle_installing_plugins')
   finish
 endif
 
-let g:jsx_ext_required = 0
+let g:jsx_ext_required = 1

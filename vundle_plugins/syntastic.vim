@@ -1,4 +1,4 @@
-﻿if exists('g:vundle_installing_plugins')
+if exists('g:vundle_installing_plugins')
   Plugin 'scrooloose/syntastic'
   finish
 endif
@@ -26,7 +26,8 @@ endfunction
 au BufEnter * call UpdateJsHintConf()
 
 let g:syntastic_enable_go_checker = 1
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jshint', 'eslint']
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute " ,"trimming empty <", "unescaped &" , "lacks \"action", "is not recognized!", "discarding unexpected"]
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
