@@ -50,7 +50,9 @@ set ignorecase
 set smartcase
 set nobomb
 
+" neovim specifics
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " search highlighting
 set incsearch
