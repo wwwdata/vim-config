@@ -13,10 +13,10 @@ endif
 " -----------------
 " Color
 " -----------------
+colorscheme railscasts
 set guifont=Monaco\ for\ Powerline:h12
 set nu
 set background=dark
-colorscheme railscasts
 
 "baycomb
 "bensday
@@ -31,7 +31,6 @@ colorscheme railscasts
 " Behaviors
 " -----------------
 syntax enable
-set backspace=indent,eol,start
 set ts=4
 set sw=4
 set guioptions-=r
@@ -43,7 +42,6 @@ let mapleader = ","
 set scrolloff=3
 set visualbell
 set cursorline
-set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
@@ -51,6 +49,8 @@ set relativenumber
 set ignorecase
 set smartcase
 set nobomb
+
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " search highlighting
 set incsearch
