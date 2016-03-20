@@ -128,13 +128,6 @@ set colorcolumn=120
 inoremap <C-s>     <C-O>:update<cr>
 nnoremap <C-s>     :update<cr>
 
-" Movement in insert mode
-inoremap <C-h> <C-o>h
-inoremap <C-l> <C-o>a
-inoremap <C-j> <C-o>j
-inoremap <C-k> <C-o>k
-inoremap <C-^> <C-o><C-^>
-
 nmap <leader>u :UltiSnipsEdit<CR>
 
 " ----------------- spacemacs like keybindings
@@ -275,3 +268,9 @@ nmap <F2> :NERDTreeFind<CR>
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeChDirMode = 1
 let g:NERDTreeMinimalUI = 1
+
+"let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsListSnippets="<c-l>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
