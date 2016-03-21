@@ -128,6 +128,13 @@ set colorcolumn=120
 inoremap <C-s>     <C-O>:update<cr>
 nnoremap <C-s>     :update<cr>
 
+" Quit
+inoremap <C-Q>     <esc>:q<cr>
+nnoremap <C-Q>     :q<cr>
+vnoremap <C-Q>     <esc>
+nnoremap <Leader>q :q<cr>
+nnoremap <Leader>Q :qa!<cr>
+
 nmap <leader>u :UltiSnipsEdit<CR>
 
 " ----------------- spacemacs like keybindings
