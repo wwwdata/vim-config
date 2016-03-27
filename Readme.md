@@ -1,36 +1,7 @@
-VIM Bundle and Configuration
+VIM Plug 
 ===========================
 
-This is just my personal collection and configuration of VIM plugins. It currenctly has a focus on
-Google Go and JavaScript Plugins. There are a lot of different collections out there if you are
-looking for an all-in-one solution.
-
-Installation
-------------
-
-To use this u need to symlink your `~/.vimrc` to the `.vimrc` in this repository.
-After that, you need to install vundle manually. Then you can use the Vundle PluginInstall 
-command. For Vundle Usage please read their documentation here:
-https://github.com/gmarik/Vundle.vim
-
-```
-$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-
-Reqirements
------------
-
-I am also using YouCompleteMe which needs a VIM installation with python support. Make sure you have
-compiled vim with python27 flag. I am using macports:
-
-```
-$ sudo port install vim +python27
-```
-
-After that, YouCompleteMe needs some compiling, so execute their install script:
-
-```
-$ ~/.vim/bundle/YouCompleteMe/install.sh
-```
+My personal neovim setup. Use vim-plug addon manager and have fun. Currently
+under heavy rework.
 
 Or just use [neovim](https://neovim.io/)
