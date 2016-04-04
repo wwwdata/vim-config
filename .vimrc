@@ -176,6 +176,8 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gl :Commits<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gd :Gdiff<CR>
 
 " map .spec to coffee filetype
 au Bufread,BufNewFile *.spec set filetype=coffee
