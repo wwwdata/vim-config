@@ -140,6 +140,8 @@ nnoremap <Leader>Q :qa!<cr>
 nmap <leader>u :UltiSnipsEdit<CR>
 
 " ----------------- spacemacs like keybindings
+"  open vimrc
+nnoremap <Leader>ve :vsplit ~/.vim/.vimrc<CR>
 " project
 nnoremap <silent> <leader>pt :NERDTreeToggle<CR>   " open a horizontal split and switch to it (,h)
 nnoremap <silent> <leader>pF :NERDTreeFind<CR>   " open a horizontal split and switch to it (,h)
