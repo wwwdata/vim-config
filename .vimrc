@@ -51,6 +51,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'kassio/neoterm'
 call plug#end()
 
 " }}}
@@ -287,3 +288,6 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsListSnippets="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Terminal stuff
+:tnoremap <Esc> <C-\><C-n>
