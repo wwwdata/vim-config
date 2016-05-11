@@ -52,6 +52,13 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kassio/neoterm'
+
+" salesforce
+Plug 'neowit/vim-force.com'
+let g:apex_backup_folder = "/tmp/apex_backup"
+let g:apex_temp_folder = "/tmp/apex_tmp"
+let g:apex_properties_folder = "/tmp/apex_properties"
+let g:apex_tooling_force_dot_com_path = "/tmp/gofuyourself"
 call plug#end()
 
 " }}}
