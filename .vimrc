@@ -55,6 +55,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kassio/neoterm'
 
+Plug 'slashmili/alchemist.vim'
+
 " salesforce
 Plug 'neowit/vim-force.com'
 let g:apex_backup_folder = "/tmp/apex_backup"
