@@ -158,7 +158,7 @@ nnoremap <Leader>ve :vsplit ~/.vim/.vimrc<CR>
 nnoremap <silent> <leader>pt :NERDTreeToggle<CR>   " open a horizontal split and switch to it (,h)
 nnoremap <silent> <leader>pF :NERDTreeFind<CR>   " open a horizontal split and switch to it (,h)
 nnoremap <leader>pf :GitFiles<CR>
-nnoremap <leader>p/ :Ag<CR>
+nnoremap <leader>p/ :Ag 
 nnoremap <leader>pr :History<CR>
 
 " window
