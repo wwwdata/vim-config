@@ -36,6 +36,8 @@ Plug 'tpope/vim-surround'
 
 " Syntax highlighting for almost everything
 Plug 'sheerun/vim-polyglot'
+" enable jsx everywhere
+let g:jsx_ext_required = 0
 
 " Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
