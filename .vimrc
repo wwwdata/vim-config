@@ -300,7 +300,8 @@ let g:NERDTreeMinimalUI = 1
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsListSnippets="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpBackwardTrigger="<c-n>"
+let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
 " Terminal stuff
 :tnoremap <Esc> <C-\><C-n>

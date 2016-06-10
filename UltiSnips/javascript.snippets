@@ -1,0 +1,20 @@
+# boiletplate for one jest test
+snippet jest "jest.unmock and imports of enzyme"
+jest.unmock('${1:./SomeComponent}');
+
+import React from 'react';
+import { ${2:shallow} } from 'enzyme';
+import ${1/^[^\w]*(\w+)$/$1/} from '$1';
+endsnippet
+
+snippet des "describe('test', () => {})"
+describe('${1:<SomeComponent />}', () => {
+  ${2:it...}
+});
+endsnippet
+
+snippet it "it('testing', () => {})"
+it('${1:just works}', () => {
+  ${2}
+});
+endsnippet
