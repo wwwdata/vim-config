@@ -55,7 +55,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kassio/neoterm'
+Plug 'kassio/neoterm', { 'commit': '9e33da0a' }
 
 Plug 'slashmili/alchemist.vim'
 
@@ -194,6 +194,8 @@ nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gl :Commits<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>gm :Gmerge<CR>
 
 " map .spec to coffee filetype
 au Bufread,BufNewFile *.spec set filetype=coffee
