@@ -42,6 +42,7 @@ let g:jsx_ext_required = 0
 " Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 autocmd! BufWritePost * Neomake
+let g:neomake_open_list = 2
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
