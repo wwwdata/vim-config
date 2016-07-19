@@ -14,6 +14,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled = 1
 Plug 'godlygeek/tabular'
+Plug 'JamshedVesuna/vim-markdown-preview', { 'do': 'pip install grip' }
+let g:vim_markdown_preview_github = 1
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 set laststatus=2
@@ -42,7 +44,6 @@ Plug 'sheerun/vim-polyglot'
 " enable jsx everywhere
 let g:jsx_ext_required = 0
 
-" Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 autocmd! BufWritePost,BufReadPost * Neomake
 let g:neomake_open_list = 2
@@ -207,41 +208,6 @@ au Bufread,BufNewFile *.spec set filetype=coffee
 " easy-align
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
-
-" SYNTASTIC
-function s:find_jshintrc(dir)
-  let l:found = globpath(a:dir, '.jshintrc')
-  if filereadable(l:found)
-    return l:found
-  endif
-
-  let l:parent = fnamemodify(a:dir, ':h')
-  if l:parent != a:dir
-    return s:find_jshintrc(l:parent)
-  endif
-
-  return "~/.jshintrc"
-endfunction
-
-function UpdateJsHintConf()
-  let l:dir = expand('%:p:h')
-  let l:jshintrc = s:find_jshintrc(l:dir)
-  let g:syntastic_javascript_jshint_args = '--config ' . l:jshintrc
-endfunction
-
-au BufEnter * call UpdateJsHintConf()
-
-let g:syntastic_enable_go_checker = 1
-let g:syntastic_javascript_checkers = ['jshint', 'eslint']
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute " ,"trimming empty <", "unescaped &" , "lacks \"action", "is not recognized!", "discarding unexpected"]
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " Tagbar
 nmap <F4> :TagbarToggle<CR>
