@@ -11,6 +11,9 @@ Plug 'junegunn/gv.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled = 1
+Plug 'godlygeek/tabular'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 set laststatus=2
