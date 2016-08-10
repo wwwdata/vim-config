@@ -119,7 +119,7 @@ kwmc mode prefix color 0xFF458588
 
 /*  Default Keybinds */
 // Activate prefix mode
-kwmc bindsym ctrl-x mode activate prefix
+kwmc bindsym ctrl-p mode activate prefix
 
 // Quit Kwm
 kwmc bindsym cmd+alt+ctrl-q quit
@@ -140,7 +140,7 @@ kwmc bindsym cmd+ctrl-d space -t float
 kwmc bindsym cmd+ctrl-r tree rotate 90
 
 // Modify Container
-kwmc bindsym Prefix-s window -c split-mode toggle
+kwmc bindsym prefix-s window -c split-mode toggle
 kwmc bindsym prefix-h window -c reduce 0.05
 kwmc bindsym prefix-l window -c expand 0.05
 kwmc bindsym prefix-< window -c type toggle
@@ -170,6 +170,10 @@ kwmc bindsym cmd+alt-m window -fm next
 kwmc bindsym cmd+alt-1 display -f 0
 kwmc bindsym cmd+alt-2 display -f 1
 kwmc bindsym cmd+alt-3 display -f 2
+
+// Better Screen Focus
+kwmc bindsym cmd+ctrl-h display -f 0
+kwmc bindsym cmd+ctrl-l display -f 1
 
 // Swap Focused Window
 kwmc bindsym ctrl+alt-h window -s west
@@ -201,6 +205,10 @@ kwmc bindsym ctrl+alt-right window -m space right
 kwmc bindsym ctrl+alt-1 window -m display 0
 kwmc bindsym ctrl+alt-2 window -m display 1
 kwmc bindsym ctrl+alt-3 window -m display 2
+
+// Better Screen Move
+kwmc bindsym cmd+shift-h window -m display 0
+kwmc bindsym cmd+shift-l window -m display 1
 
 // Increase Container Gaps
 kwmc bindsym prefix-x space -g increase horizontal
