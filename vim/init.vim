@@ -16,6 +16,7 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_preview_hotkey = '<C-m>'
 Plug 'godlygeek/tabular'
 Plug 'JamshedVesuna/vim-markdown-preview', { 'do': 'pip install grip' }
 let g:vim_markdown_preview_github = 1
