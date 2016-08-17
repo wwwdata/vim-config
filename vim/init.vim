@@ -67,7 +67,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'Shougo/echodoc.vim'
 let g:echodoc_enable_at_startup = 1
-set cmdheight=2
+set noshowmode
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:deoplete#enable_at_startup = 1
 " Deoplete configs
