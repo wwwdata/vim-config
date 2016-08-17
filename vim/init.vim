@@ -58,13 +58,24 @@ Plug 'tpope/vim-unimpaired'
 Plug 'fatih/vim-go'
 " todo configure this
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
-Plug 'Valloric/YouCompleteMe'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'AndrewRadev/splitjoin.vim'
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'carlitux/deoplete-ternjs'
+Plug 'Shougo/echodoc.vim'
+let g:echodoc_enable_at_startup = 1
+set cmdheight=2
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+let g:deoplete#enable_at_startup = 1
+" Deoplete configs
+inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kassio/neoterm', { 'commit': '9e33da0a' }
 
 Plug 'slashmili/alchemist.vim'
 
