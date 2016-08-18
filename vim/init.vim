@@ -65,6 +65,7 @@ function! DoRemote(arg)
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'carlitux/deoplete-ternjs'
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'Shougo/echodoc.vim'
 let g:echodoc_enable_at_startup = 1
 set noshowmode
