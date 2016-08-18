@@ -292,3 +292,7 @@ let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
 " Terminal stuff
 :tnoremap <Esc> <C-\><C-n>
+
+" create jumplist entry for j and k jumps with more than 1 line
+nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
+nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
