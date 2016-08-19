@@ -72,8 +72,8 @@ set noshowmode
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:deoplete#enable_at_startup = 1
 " Deoplete configs
-inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
+inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<s-tab>"
 
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
