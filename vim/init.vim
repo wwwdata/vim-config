@@ -51,6 +51,7 @@ let g:jsx_ext_required = 0
 Plug 'benekastah/neomake'
 autocmd! BufWritePost,BufReadPost * Neomake
 let g:neomake_open_list = 2
+let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
