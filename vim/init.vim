@@ -81,6 +81,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'slashmili/alchemist.vim'
 
+Plug 'rhysd/vim-grammarous'
+let g:grammarous#use_vim_spelllang = 1
+
 " salesforce
 Plug 'neowit/vim-force.com'
 let g:apex_backup_folder = "/tmp/apex_backup"
@@ -204,6 +207,8 @@ nnoremap <leader>bl :BLines<CR>
 " toggles
 noremap <Leader>ti :set list!<CR>:echo 'Toggled special characters'<CR>" Toggle special characters
 noremap <Leader>tl :set relativenumber!<CR>:echo 'Toggled relative line numbers'<CR>" Toggle relative line numbers
+noremap <Leader>tse :set spell! spelllang=en<CR>:echo 'Toggled en spell check'<CR>" Toggle en spell check
+noremap <Leader>tsd :set spell! spelllang=de<CR>:echo 'Toggled de spell check'<CR>" Toggle de spell check
 noremap <Leader>tm :MediumModeToggle<CR>:echo 'Toggled medium mode'<CR>" Toggle medium mode
 noremap <Leader>tH :call ToggleHardMode()<CR>:echo 'Toggled hardmode'<CR>" Toggle hard mode
 noremap <Leader>th :HardTimeToggle<CR>:echo 'Toggled hardtime'<CR>" Toggle hard time
@@ -213,7 +218,9 @@ noremap <Leader>tg :Goyo<CR>:echo 'Toggled Goyo'<CR>" Toggle goyo time
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Gpush<CR>
-nnoremap <leader>gl :Commits<CR>
+nnoremap <leader>gl :GV<CR>
+nnoremap <leader>gvc :GV!<CR>
+nnoremap <leader>gvq :GV?<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gw :Gwrite<CR>
