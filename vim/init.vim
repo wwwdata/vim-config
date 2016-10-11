@@ -90,6 +90,7 @@ let g:apex_backup_folder = "/tmp/apex_backup"
 let g:apex_temp_folder = "/tmp/apex_tmp"
 let g:apex_properties_folder = "/tmp/apex_properties"
 let g:apex_tooling_force_dot_com_path = "/tmp/gofuyourself"
+source ~/.dotfiles/vim/plugins/goyo.vim
 call plug#end()
 
 " }}}
@@ -105,7 +106,7 @@ let g:seoul256_background = 235
 colo seoul256
 set guifont=Monaco\ for\ Powerline:h12
 set nu
-set background=dark
+" set background=dark
 
 "baycomb
 "bensday
@@ -150,7 +151,6 @@ set breakindentopt=sbr
 
 " neovim specifics
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " search highlighting
 set incsearch
@@ -209,9 +209,6 @@ noremap <Leader>ti :set list!<CR>:echo 'Toggled special characters'<CR>" Toggle 
 noremap <Leader>tl :set relativenumber!<CR>:echo 'Toggled relative line numbers'<CR>" Toggle relative line numbers
 noremap <Leader>tse :set spell! spelllang=en<CR>:echo 'Toggled en spell check'<CR>" Toggle en spell check
 noremap <Leader>tsd :set spell! spelllang=de<CR>:echo 'Toggled de spell check'<CR>" Toggle de spell check
-noremap <Leader>tm :MediumModeToggle<CR>:echo 'Toggled medium mode'<CR>" Toggle medium mode
-noremap <Leader>tH :call ToggleHardMode()<CR>:echo 'Toggled hardmode'<CR>" Toggle hard mode
-noremap <Leader>th :HardTimeToggle<CR>:echo 'Toggled hardtime'<CR>" Toggle hard time
 noremap <Leader>tg :Goyo<CR>:echo 'Toggled Goyo'<CR>" Toggle goyo time
 
 " git
