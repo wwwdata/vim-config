@@ -55,6 +55,7 @@ let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'epilande/vim-react-snippets'
 Plug 'tpope/vim-unimpaired'
 Plug 'fatih/vim-go'
 " todo configure this
@@ -127,6 +128,7 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=l
 set guioptions-=LS
+set clipboard=unnamed
 
 let mapleader = ' '
 let maplocalleader = ' '
