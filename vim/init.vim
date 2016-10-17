@@ -79,6 +79,7 @@ inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<s-tab>"
 
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-rooter'
 
 Plug 'slashmili/alchemist.vim'
 
@@ -166,6 +167,11 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=120
+
+" vimr
+if has("gui_vimr")
+  set termguicolors
+endif
 
 " Save
 inoremap <C-s>     <C-O>:update<cr>
