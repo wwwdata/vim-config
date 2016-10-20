@@ -29,6 +29,7 @@ let g:airline#extensions#tabline#tab_nr_type = 2
 let g:airline_theme = 'base16_ashes'
 
 Plug 'flazz/vim-colorschemes'
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'Raimondi/delimitMate'
 let delimitMate_expand_cr = 2
