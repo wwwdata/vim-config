@@ -54,6 +54,7 @@ Plug 'benekastah/neomake'
 autocmd! BufWritePost,BufReadPost * Neomake
 let g:neomake_open_list = 2
 let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
+let g:neomake_jsx_enabled_makers = ['eslint']
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -76,6 +77,7 @@ set noshowmode
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:deoplete#enable_at_startup = 1
 " Deoplete configs
+let g:deoplete#auto_complete_delay = 0
 inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<s-tab>"
 
