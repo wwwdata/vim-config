@@ -69,7 +69,9 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'carlitux/deoplete-ternjs'
+Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
+let g:tern_request_timeout = 1
+Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'Shougo/echodoc.vim'
 let g:echodoc_enable_at_startup = 1
@@ -234,6 +236,17 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>gm :Gmerge<CR>
+
+" javascript
+au FileType javascript nmap gd :TernDef<CR>
+au FileType javascript nmap <leader>td :TernDoc<CR>
+au FileType javascript nmap <leader>tb :TernDocBrowse<CR>
+au FileType javascript nmap <leader>tt :TernType<CR>
+au FileType javascript nmap <leader>tpd :TernDefPreview<CR>
+au FileType javascript nmap <leader>tsd :TernDefSplit<CR>
+au FileType javascript nmap <leader>ttd :TernDefTab<CR>
+au FileType javascript nmap <leader>tr :TernRefs<CR>
+au FileType javascript nmap <leader>tR :TernRename<CR>
 
 " map .spec to coffee filetype
 au Bufread,BufNewFile *.spec set filetype=coffee
