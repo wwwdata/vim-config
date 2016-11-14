@@ -112,7 +112,6 @@ set encoding=utf-8
 " -----------------
 let g:seoul256_background = 235
 colo seoul256
-set guifont=Monaco\ for\ Powerline:h12
 set nu
 " set background=dark
 
