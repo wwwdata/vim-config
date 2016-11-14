@@ -329,4 +329,4 @@ nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
 " italic comment highlight
-highlight Comment cterm=italic
+highlight Comment cterm=italic gui=italic
