@@ -25,4 +25,10 @@ curl -L https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Re
 echo "---> Fonts done"
 
 echo ""
+echo "---> tic italic"
+tic ~/.dotfiles/iterm/xterm-256color-italic.terminfo
+tic -x ~/.dotfiles/tmux/tmux.terminfo
+echo "---> tic italic done"
+
+echo ""
 echo "========> Yay, Done!"
