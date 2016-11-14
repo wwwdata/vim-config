@@ -9,6 +9,13 @@ cd ~/.dotfiles
 echo "---> Brew restore done"
 
 echo ""
+echo "---> ZSH"
+git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone git@github.com:bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+echo "---> ZSH done"
+
+echo ""
 echo "---> Neovim"
 ln -s ~/.dotfiles/vim ~/.config/nvim
 echo "---> Neovim done"
