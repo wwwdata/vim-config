@@ -79,7 +79,7 @@ set noshowmode
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:deoplete#enable_at_startup = 1
 " Deoplete configs
-let g:deoplete#auto_complete_delay = 0
+let g:deoplete#auto_complete_delay = 50
 inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<s-tab>"
 
@@ -327,3 +327,6 @@ let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 " create jumplist entry for j and k jumps with more than 1 line
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
+
+" italic comment highlight
+highlight Comment cterm=italic
