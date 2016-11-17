@@ -38,4 +38,8 @@ tic -x ~/.dotfiles/tmux/tmux.terminfo
 echo "---> tic italic done"
 
 echo ""
+echo "---> disable mouse acceleration"
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
+
+echo ""
 echo "========> Yay, Done!"
