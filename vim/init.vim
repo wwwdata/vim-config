@@ -172,11 +172,30 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=120
+set foldmethod=indent
+set foldlevelstart=1
+nnoremap <Tab> za
 
 " vimr
 if has("gui_vimr")
   set termguicolors
 endif
+
+" window navigation
+xnoremap <C-h> <C-w>h
+xnoremap <C-j> <C-w>j
+xnoremap <C-k> <C-w>k
+xnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" quickfix mapping, nextfile jumps
+nnoremap <silent> <Up> :cprevious<CR>
+nnoremap <silent> <Down> :cnext<CR>
+nnoremap <silent> <Left> :cpfile<CR>
+nnoremap <silent> <Right> :cnfile<CR>
 
 " Save
 inoremap <C-s>     <C-O>:update<cr>
