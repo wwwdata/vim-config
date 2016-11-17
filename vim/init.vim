@@ -190,6 +190,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+" resize windows when terminal was resized
+autocmd VimResized * execute "normal! \<c-w>="
 
 " quickfix mapping, nextfile jumps
 nnoremap <silent> <Up> :cprevious<CR>
