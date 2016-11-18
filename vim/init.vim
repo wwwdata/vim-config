@@ -257,6 +257,24 @@ nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>gm :Gmerge<CR>
 
+" undotree
+nnoremap <silent> <Leader>u :UndotreeToggle<CR>
+
+let g:undotree_HighlightChangedText=0
+let g:undotree_SetFocusWhenToggle=1
+let g:undotree_WindowLayout=2
+let g:undotree_DiffCommand='diff -u'
+
+" Mappings to emulate Gundo behavior.
+function! g:Undotree_CustomMap()
+  " Normally j, k just move and J, K actually revert; lets make j, k revert too.
+  nmap <buffer> j <Plug>UndotreeGoPreviousState
+  nmap <buffer> k <Plug>UndotreeGoNextState
+
+  " Equivalent to `g:gundo_close_on_revert=1`:
+  nmap <buffer> <Return> <Plug>UndotreeClose
+endfunction
+
 " javascript
 au FileType javascript nmap gd :TernDef<CR>
 au FileType javascript nmap <leader>td :TernDoc<CR>
