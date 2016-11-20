@@ -11,4 +11,5 @@ nmap <leader>tsd :TernDefSplit<CR>
 nmap <leader>ttd :TernDefTab<CR>
 nmap <leader>tr :TernRefs<CR>
 nmap <leader>tR :TernRename<CR>
-
+" fix javascript
+nnoremap <Leader>fj :Fixmyjs<CR>

@@ -46,6 +46,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
 Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
+Plug 'ruanyl/vim-fixmyjs', { 'for': 'javascript' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 Plug 'Shougo/echodoc.vim'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
