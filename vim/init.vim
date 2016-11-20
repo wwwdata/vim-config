@@ -54,6 +54,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-rooter'
 Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 Plug 'rhysd/vim-grammarous'
+Plug 'eugen0329/vim-esearch'
 source ~/.dotfiles/vim/plugins/goyo.vim
 call plug#end()
 
