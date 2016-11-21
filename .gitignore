@@ -2,3 +2,4 @@ plugged
 *.swp
 *.spl
 zsh/private.zsh
+vim/spell

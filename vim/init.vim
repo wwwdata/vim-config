@@ -45,6 +45,7 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
+Plug 'steelsojka/deoplete-flow', { 'for': 'javascript' }
 Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
 Plug 'ruanyl/vim-fixmyjs', { 'for': 'javascript' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
