@@ -42,6 +42,14 @@ set completeopt=menuone,preview
 let &showbreak = '↳ '
 set breakindent
 set breakindentopt=sbr
+set list
+set listchars=nbsp:⦸
+set listchars+=tab:▷┅
+set listchars+=extends:»
+set listchars+=precedes:«
+set listchars+=trail:•
+set scrolloff=3
+set hidden
 
 " neovim specifics
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
@@ -52,12 +60,15 @@ set showmatch
 set hlsearch
 set wrap
 set textwidth=79
-set formatoptions=qrn1
+" join lines, remove comment
+set formatoptions+=j
+" numbered list indent
+set formatoptions+=n
 set colorcolumn=120
 
 " folding
 set foldmethod=indent
-set foldlevelstart=1
+set foldlevelstart=99
 
 " vimr
 if has("gui_vimr")
