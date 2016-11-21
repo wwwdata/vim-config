@@ -9,7 +9,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Example aliases
@@ -50,6 +50,7 @@ export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 eval "$(hub alias -s)"
 
 alias vim=nvim
+alias yip=yarn install --pure-lockfile
 
 # additional secret stuff like api keys
 source $HOME/.dotfiles/zsh/private.zsh
