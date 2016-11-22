@@ -3,7 +3,7 @@ function! g:UltiSnips_Complete()
   if g:ulti_expand_res == 0
     if pumvisible()
       " test to always jump to next suggestion
-      call UltiSnips#JumpForwards()
+      " call UltiSnips#JumpForwards()
 
       " use tab to jump to the next result by triggering 'go-down'
       return "\<C-n>"
