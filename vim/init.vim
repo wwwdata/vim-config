@@ -57,6 +57,7 @@ Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 Plug 'rhysd/vim-grammarous'
 Plug 'eugen0329/vim-esearch'
 Plug 'wincent/scalpel'
+Plug 'kshenoy/vim-signature'
 source ~/.dotfiles/vim/plugins/goyo.vim
 call plug#end()
 
