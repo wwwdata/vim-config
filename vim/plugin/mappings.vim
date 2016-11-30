@@ -19,6 +19,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" neovim quickfix because <C-h> is not directly working
+nmap <BS> <C-W>h
+
 " quickfix mapping, nextfile jumps
 nnoremap <silent> <Up> :cprevious<CR>
 nnoremap <silent> <Down> :cnext<CR>

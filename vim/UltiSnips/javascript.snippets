@@ -21,3 +21,24 @@ afterEach(function() {
 	${1}
 });
 endsnippet
+
+snippet rnfc "React Native Functional Component" b
+/* @flow weak */
+
+import React from 'react';
+
+const ${1:`!v expand('%:t:r')`} = ({ ${3:...props} }) => (
+	$4
+);
+
+$1.defaultProps = {
+};
+
+$1.sampleProps = () => ({
+});
+
+$1.propTypes = {
+};
+
+export default $1;
+endsnippet
