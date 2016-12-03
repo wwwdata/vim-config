@@ -22,7 +22,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Raimondi/delimitMate'
-Plug 'editorconfig/editorconfig-vim'
+Plug 'editorconfig/editorconfig-vim', { 'on': [] }
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -35,7 +35,7 @@ Plug 'tpope/vim-surround'
 Plug 'sheerun/vim-polyglot'
 Plug 'benekastah/neomake'
 Plug 'majutsushi/tagbar'
-Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips', { 'on': [] }
 Plug 'honza/vim-snippets'
 Plug 'epilande/vim-react-snippets'
 Plug 'tpope/vim-unimpaired'
@@ -46,7 +46,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
 Plug 'steelsojka/deoplete-flow', { 'for': 'javascript' }
-Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'on': ['TernDef', 'TernDoc', 'TernDocBrowse', 'TernType', 'TernDefPreview', 'TernDefSplit', 'TernDefTab', 'TernRefs', 'TernRename'] }
 Plug 'ruanyl/vim-fixmyjs', { 'for': 'javascript' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 Plug 'Shougo/echodoc.vim'
