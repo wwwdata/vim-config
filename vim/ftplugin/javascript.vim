@@ -12,4 +12,4 @@ nmap <leader>ttd :TernDefTab<CR>
 nmap <leader>tr :TernRefs<CR>
 nmap <leader>tR :TernRename<CR>
 " fix javascript
-nnoremap <Leader>fj :Fixmyjs<CR>
+nnoremap <Leader>fj :Fixmyjsconfig<CR>
