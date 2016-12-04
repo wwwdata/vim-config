@@ -6,9 +6,49 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_timer)
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_CUSTOM_TIMER="report_start_time"
+POWERLEVEL9K_CUSTOM_TIMER_BACKGROUND="black"
+
+# timer
+autoload -U add-zsh-hook
+typeset -F SECONDS
+function record_start_time() {
+  emulate -L zsh
+  unset ZSH_START_TIME
+  ZSH_START_TIME=${ZSH_START_TIME:-$SECONDS}
+}
+
+add-zsh-hook preexec record_start_time
+
+function report_start_time() {
+  if [ $ZSH_START_TIME ]; then
+    local DELTA=$(($SECONDS - $ZSH_START_TIME))
+    local DAYS=$((~~($DELTA / 86400)))
+    local HOURS=$((~~(($DELTA - $DAYS * 86400) / 3600)))
+    local MINUTES=$((~~(($DELTA - $DAYS * 86400 - $HOURS * 3600) / 60)))
+    local SECS=$(($DELTA - $DAYS * 86400 - $HOURS * 3600 - $MINUTES * 60))
+    local ELAPSED=''
+    test "$DAYS" != '0' && ELAPSED="${DAYS}d"
+    test "$HOURS" != '0' && ELAPSED="${ELAPSED}${HOURS}h"
+    test "$MINUTES" != '0' && ELAPSED="${ELAPSED}${MINUTES}m"
+    if [ "$ELAPSED" = '' ]; then
+      SECS="$(print -f "%.2f" $SECS)s"
+    elif [ "$DAYS" != '0' ]; then
+      SECS=''
+    else
+      SECS="$((~~$SECS))s"
+    fi
+    ELAPSED="${ELAPSED}${SECS}"
+    local ITALIC_ON=$'\e[3m'
+    local ITALIC_OFF=$'\e[23m'
+    unset ZSH_START_TIME
+    echo -n "%F{cyan}%{$ITALIC_ON%}${ELAPSED}%{$ITALIC_OFF%}"
+  fi
+}
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
