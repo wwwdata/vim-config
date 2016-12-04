@@ -1,5 +1,5 @@
 " Load Plugins with vim-plug
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.dotfiles/vim/plugged')
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align', { 'on': ['<Plug>(EasyAlign)', 'EasyAlign'] }
 Plug 'junegunn/vim-emoji'
