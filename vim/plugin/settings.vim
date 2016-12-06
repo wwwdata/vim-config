@@ -45,6 +45,7 @@ set nojoinspaces                    " don't autoinsert two spaces after '.', '?'
 set hidden                          " allow buffer hiding without save
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1 " neovim can display a nice cursor line in insert mode that blinks
+set inccommand=split                " nice preview of search and replace actions
 
 set showmatch                       " show matching brackets
 set hlsearch                        " highlight all search matches

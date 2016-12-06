@@ -21,7 +21,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
-Plug 'Raimondi/delimitMate'
+Plug 'jiangmiao/auto-pairs'
 Plug 'editorconfig/editorconfig-vim', { 'on': [] }
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
