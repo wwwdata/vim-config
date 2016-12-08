@@ -58,6 +58,7 @@ Plug 'rhysd/vim-grammarous'
 Plug 'eugen0329/vim-esearch'
 Plug 'kshenoy/vim-signature'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'christoomey/vim-tmux-navigator'
 source ~/.dotfiles/vim/plugins/goyo.vim
 call plug#end()
 

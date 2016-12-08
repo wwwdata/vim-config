@@ -8,17 +8,6 @@ nnoremap <leader>sc :noh<cr>
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 
-
-" window navigation
-xnoremap <C-h> <C-w>h
-xnoremap <C-j> <C-w>j
-xnoremap <C-k> <C-w>k
-xnoremap <C-l> <C-w>l
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
 " neovim quickfix because <C-h> is not directly working
 nmap <BS> <C-W>h
 
