@@ -1,6 +1,7 @@
 setlocal noexpandtab
 setlocal shiftwidth=4
 setlocal tabstop=4
+set nolist
 
 nmap <Leader>s <Plug>(go-implements)
 nmap <Leader>i <Plug>(go-info)
