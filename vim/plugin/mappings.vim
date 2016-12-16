@@ -8,9 +8,6 @@ nnoremap <leader>sc :noh<cr>
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 
-" neovim quickfix because <C-h> is not directly working
-nmap <BS> <C-W>h
-
 " quickfix mapping, nextfile jumps
 nnoremap <silent> <Up> :cprevious<CR>
 nnoremap <silent> <Down> :cnext<CR>
