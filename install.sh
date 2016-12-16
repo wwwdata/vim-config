@@ -44,4 +44,9 @@ echo "---> disable mouse acceleration"
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
 echo ""
+echo "---> ctrl-h fix"
+infocmp $TERM | sed 's/kbs=^[hH]/kbs=\177/' > $TERM.ti
+tic $TERM.ti
+
+echo ""
 echo "========> Yay, Done!"
