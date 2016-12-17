@@ -94,6 +94,7 @@ eval "$(hub alias -s)"
 
 alias vim=nvim
 alias yip=yarn install --pure-lockfile
+alias ssh='TERM=xterm-color ssh'
 
 # additional secret stuff like api keys
 source $HOME/.dotfiles/zsh/private.zsh
