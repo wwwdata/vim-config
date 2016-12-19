@@ -33,8 +33,10 @@ nnoremap <leader>rc :so ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <leader>pt :NERDTreeToggle<CR>   " open a horizontal split and switch to it (,h)
 nnoremap <silent> <leader>pF :NERDTreeFind<CR>   " open a horizontal split and switch to it (,h)
 nnoremap <leader>pf :GitFiles<CR>
-nnoremap <leader>p/ :Ag 
+nnoremap <leader>p/ :Ag
 nnoremap <leader>pr :History<CR>
+nnoremap <leader>ps :Snippets<CR>
+nnoremap <leader>pc :Commands<CR>
 
 " window
 nnoremap <leader>wv <C-w>v<C-w>l   " split vertically
