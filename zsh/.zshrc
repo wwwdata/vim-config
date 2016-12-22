@@ -84,6 +84,8 @@ plugins=(git git-flow gitfast git-extras osx screen z vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
+export EDITOR='nvim'
+
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/texlive/2016/bin/x86_64-darwin
 export GOPATH=$HOME/Go
@@ -95,6 +97,8 @@ eval "$(hub alias -s)"
 alias vim=nvim
 alias yip=yarn install --pure-lockfile
 alias ssh='TERM=xterm-color ssh'
+
+source /usr/local/Cellar/tmuxinator-completion/0.9.0/share/zsh/site-functions/_tmuxinator
 
 # additional secret stuff like api keys
 source $HOME/.dotfiles/zsh/private.zsh
