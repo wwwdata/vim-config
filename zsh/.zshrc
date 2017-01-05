@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='nvim'
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/texlive/2016/bin/x86_64-darwin
+export PATH=~/.dotfiles/zsh/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/texlive/2016/bin/x86_64-darwin
 export GOPATH=$HOME/Go
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
@@ -97,6 +97,7 @@ eval "$(hub alias -s)"
 alias vim=nvim
 alias yip=yarn install --pure-lockfile
 alias ssh='TERM=xterm-color ssh'
+alias mutt='TERM=screen-256color mutt'
 
 source /usr/local/Cellar/tmuxinator-completion/0.9.0/share/zsh/site-functions/_tmuxinator
 
