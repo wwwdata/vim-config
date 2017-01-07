@@ -31,15 +31,17 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-surround'
 
-" Syntax highlighting for almost everything
-Plug 'sheerun/vim-polyglot'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
+
 Plug 'benekastah/neomake'
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips', { 'on': [] }
 Plug 'honza/vim-snippets'
 Plug 'epilande/vim-react-snippets'
 Plug 'tpope/vim-unimpaired'
-Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'AndrewRadev/splitjoin.vim'
@@ -53,7 +55,6 @@ Plug 'Shougo/echodoc.vim'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-rooter'
-Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 Plug 'rhysd/vim-grammarous'
 Plug 'eugen0329/vim-esearch'
 Plug 'kshenoy/vim-signature'
