@@ -28,6 +28,12 @@ ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 echo "---> Tmux done"
 
 echo ""
+echo "---> Alacritty"
+mkdir -p ~/.config
+ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty.yml
+echo "---> Alacritty done"
+
+echo ""
 echo "---> Fonts"
 curl -L https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/UbuntuMono/Original/complete/Ubuntu%20Mono%20Nerd%20Font%20Complete.ttf -o ~/Library/Fonts/Ubuntu\ Mono\ Nerd\ Font\ Complete.ttf
 curl -L https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete.ttf -o ~/Library/Fonts/Knack\ Regular\ Nerd\ Font\ Complete.ttf
