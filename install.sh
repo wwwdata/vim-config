@@ -54,5 +54,7 @@ echo "---> ctrl-h fix"
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\177/' > $TERM.ti
 tic $TERM.ti
 
+defaults write com.apple.screencapture location ~/Pictures/Screenshots
+
 echo ""
 echo "========> Yay, Done!"
