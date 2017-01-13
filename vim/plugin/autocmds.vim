@@ -22,3 +22,7 @@ augroup my_neomake_signs
     hi link NeomakeWarningSign NeomakeMessageSign
     hi link NeomakeWarning NeomakeMessage
 augroup END
+
+" prettier for javascript, let's try it, after that a fix my js with eslint is
+" sometimes needed as well
+autocmd FileType javascript set formatprg=prettier\ --stdin\ --print-width\ 120\ --tab-width\ 4\ --single-quote\ --trailing-comma
