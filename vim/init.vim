@@ -61,6 +61,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-projectionist'
 
 " Clojure stuff
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
