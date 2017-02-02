@@ -61,6 +61,16 @@ Plug 'kshenoy/vim-signature'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimwiki/vimwiki'
+
+" Clojure stuff
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
+Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
+Plug 'fwolanski/vim-clojure-conceal', { 'for': 'clojure' }
+Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
+Plug 'guns/vim-sexp', { 'for': 'clojure' }
+Plug 'neovim/node-host', { 'do': 'npm install' }
+Plug 'clojure-vim/nvim-parinfer.js', { 'for': 'clojure', 'do': ':UpdateRemotePlugins' }
 source ~/.dotfiles/vim/plugins/goyo.vim
 call plug#end()
 
