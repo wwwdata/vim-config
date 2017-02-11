@@ -31,6 +31,7 @@ set smartcase                       " turn of lower case results when explicitly
 set diffopt=filler,vertical         " start diff in vertical split and show filler lines
 set autoread                        " automatically read file when changed, this currently only triggers when vim has focus
 set completeopt=menuone,preview     " show auto complete also of ronly one match and open preview window
+set complete+=kspell
 let &showbreak = '↳ '               " arrow when text breaks into next line
 set breakindent                     " indent wrapped lines to match start
 set breakindentopt=sbr              " display showbreak before applying additional indent
