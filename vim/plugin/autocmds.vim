@@ -39,3 +39,13 @@ function! SearchFlowBin()
 endfunction
 
 autocmd FileType javascript.jsx.flow call SearchFlowBin()
+
+function! SearchEslintBin()
+  let local_eslint = finddir('node_modules', '.;') . '/.bin/eslint'
+  if matchstr(local_eslint, "^\/\\w") == ''
+    let local_eslint= getcwd() . "/" . local_eslint
+  endif
+  let g:neomake_javascript_eslint_exe = local_eslint
+endfunction
+
+autocmd FileType javascript call SearchEslintBin()
