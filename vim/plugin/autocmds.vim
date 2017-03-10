@@ -26,3 +26,16 @@ augroup END
 " prettier for javascript, let's try it, after that a fix my js with eslint is
 " sometimes needed as well
 autocmd FileType javascript set formatprg=prettier\ --stdin\ --print-width\ 120\ --tab-width\ 4\ --single-quote\ --trailing-comma
+
+function! SearchFlowBin()
+  let local_flow = finddir('node_modules', '.;') . '/.bin/flow'
+  if matchstr(local_flow, "^\/\\w") == ''
+      let local_flow= getcwd() . "/" . local_flow
+  endif
+  if executable(local_flow)
+    let g:flow#flowpath = local_flow
+    let g:deoplete#sources#flow#flow_bin = local_flow
+  endif
+endfunction
+
+autocmd FileType javascript.jsx.flow call SearchFlowBin()
