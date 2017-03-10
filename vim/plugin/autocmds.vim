@@ -45,7 +45,9 @@ function! SearchEslintBin()
   if matchstr(local_eslint, "^\/\\w") == ''
     let local_eslint= getcwd() . "/" . local_eslint
   endif
-  let g:neomake_javascript_eslint_exe = local_eslint
+  if executable(local_eslint)
+    let g:neomake_javascript_eslint_exe = local_eslint
+  endif
 endfunction
 
 autocmd FileType javascript call SearchEslintBin()
