@@ -92,6 +92,8 @@ kwmc rule owner="Android Emulator" properties={role="AXStandardWindow"}
 kwmc rule owner="Little Snitch Configuration" properties={role="AXStandardWindow"}
 kwmc rule owner="LINE" properties={role="AXStandardWindow"}
 kwmc rule owner="Emacs" properties={role="AXStandardWindow"}
+kwmc rule owner="qemu-system-x86_64" properties={role="AXDialog" float="true"}
+kwmc rule owner="Android Emulator" properties={role="AXDialog" float="true"}
 
 kwmc whitelist neovim-qt
 kwmc whitelist nvim-qt
