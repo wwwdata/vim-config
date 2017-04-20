@@ -12,5 +12,9 @@ nmap <leader>tsd :TernDefSplit<CR>
 nmap <leader>ttd :TernDefTab<CR>
 nmap <leader>tr :TernRefs<CR>
 nmap <leader>tR :TernRename<CR>
+" coverage
+nmap <leader>cm :IstanbulMode<CR>
+nmap <leader>cu :IstanbulUpdate<CR>
+nmap <leader>cc :IstanbulClear<CR>
 " fix javascript
 nnoremap <Leader>fj :Fixmyjsconfig<CR>

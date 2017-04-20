@@ -63,6 +63,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-projectionist'
+Plug 'retorillo/istanbul.vim', { 'on': ['IstanbulClear', 'IstanbulUpdate', 'IstanbulMode'] }
 
 " Clojure stuff
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
