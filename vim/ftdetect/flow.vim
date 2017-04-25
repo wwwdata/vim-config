@@ -1,4 +1,4 @@
-autocmd BufNewFile,BufRead *.js call DetectFlow()
+autocmd BufNewFile,BufRead,BufWritePost *.js call DetectFlow()
 
 function! DetectFlow()
   if getline(1) =~# '^\s*\/[/*]\s*@flow\>'
