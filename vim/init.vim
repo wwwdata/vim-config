@@ -64,6 +64,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-projectionist'
 Plug 'retorillo/istanbul.vim', { 'on': ['IstanbulClear', 'IstanbulUpdate', 'IstanbulMode'] }
+Plug 'sbdchd/neoformat', { 'do': 'npm install -g prettier' }
 
 " Clojure stuff
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
