@@ -114,7 +114,7 @@ kwmc rule owner="Pixelmator" properties={float="true"}
    kwmc rule owner="iTunes" properties={display="1"} */
 
 // Enable border for focused window
-kwmc config border focused on
+kwmc config border focused off
 kwmc config border focused size 2
 kwmc config border focused color 0xFFBDD322
 kwmc config border focused radius 6
