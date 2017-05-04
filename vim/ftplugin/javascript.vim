@@ -18,3 +18,4 @@ nmap <leader>cu :IstanbulUpdate<CR>
 nmap <leader>cc :IstanbulClear<CR>
 " fix javascript
 nnoremap <Leader>fj :Fixmyjsconfig<CR>
+nnoremap <Leader>pt :call Prettier_Toggle()<CR>
