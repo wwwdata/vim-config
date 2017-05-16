@@ -19,3 +19,11 @@ nmap <leader>cc :IstanbulClear<CR>
 " fix javascript
 nnoremap <Leader>fj :Fixmyjsconfig<CR>
 nnoremap <Leader>pp :call Prettier_Toggle()<CR>
+
+" imap <c-x><c-j> call fzf#vim#complete#path("ag -l -g ''") 
+inoremap <expr> <c-x><c-j> CompleteJavascriptPath()
+func! CompleteJavascriptPath()
+    " call fzf#vim#complete#path("find . -path '*/\.*' -prune -o -print \| sed '1d;s:^..::'")
+    call fzf#vim#complete#path("ag -l -g ''  \| sed 's/.js//g'")
+    return ""
+  endfu
