@@ -59,6 +59,7 @@ set foldmethod=indent               " fold with indentation method
 set foldlevelstart=99               " no initial folding
 
 set updatetime=1000                 " when to execute CursorHold
+set mouse=a                         " enable mouse support
 
 if has("gui_vimr")
   set termguicolors                 " use gui background/foreground
