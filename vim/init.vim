@@ -76,6 +76,10 @@ Plug 'guns/vim-sexp', { 'for': 'clojure' }
 Plug 'neovim/node-host', { 'do': 'npm install' }
 Plug 'clojure-vim/nvim-parinfer.js', { 'for': 'clojure', 'do': ':UpdateRemotePlugins' }
 source ~/.dotfiles/vim/plugins/goyo.vim
+
+" PHP stuff, delete garbage later again
+Plug 'lumiliet/vim-twig', { 'for': 'twig' }
+Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 call plug#end()
 
 let mapleader = ' '
