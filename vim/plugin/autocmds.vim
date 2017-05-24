@@ -49,6 +49,23 @@ endfunction
 
 autocmd FileType javascript call SearchEslintBin()
 
+function! SearchPHPCSBin()
+  let local_phpcs = finddir('vendor', '.;') . '/bin/phpcs'
+  if matchstr(local_phpcs, "^\/\\w") == ''
+    let local_phpcs = getcwd() . "/" . local_phpcs
+  endif
+  if executable(local_phpcs)
+    let ruleset = getcwd() . "/ruleset.xml"
+    let g:neomake_php_phpcs_maker = {
+      \ 'exe': local_phpcs,
+      \ 'args': ['--report=csv', '--standard=' . ruleset, '--report-width=200', '--extensions=php'],
+      \ 'errorformat': '%-GFile\,Line\,Column\,Type\,Message\,Source\,Severity%.%#,"%f"\,%l\,%c\,%t%*[a-zA-Z]\,"%m"\,%*[a-zA-Z0-9_.-]\,%*[0-9]%.%#',
+      \ }
+  endif
+endfunction
+
+autocmd FileType php call SearchPHPCSBin()
+
 " Automatic file change detection
 augroup AutoSwap
   autocmd!
