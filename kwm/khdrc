@@ -36,9 +36,13 @@ switcher - return       :   open -na /Applications/HyperTerm.app;\
                             khd -e "mode activate default"
 
 switcher - h            :   kwmc window -f west
+ctrl + cmd -h           :   kwmc window -f west
 switcher - l            :   kwmc window -f east
+ctrl + cmd - l          :   kwmc window -f east
 switcher - j            :   kwmc window -f south
+ctrl + cmd - j          :   kwmc window -f south
 switcher - k            :   kwmc window -f north
+ctrl + cmd  - k         :   kwmc window -f north
 switcher - n            :   kwmc window -fm prev
 switcher - m            :   kwmc window -fm next
 
@@ -49,19 +53,24 @@ switcher - 4            :   kwmc space -fExperimental 4
 switcher - 5            :   kwmc space -fExperimental 5
 switcher - 6            :   kwmc space -fExperimental 6
 
-switcher - left            :   kwmc space -fExperimental left
-switcher - right            :   kwmc space -fExperimental right
-switcher - p            :   kwmc space -fExperimental previous
+switcher - left          : kwmc space -fExperimental left
+ctrl + cmd - left        : kwmc space -fExperimental left
+switcher - right         : kwmc space -fExperimental right
+ctrl + cmd - right       : kwmc space -fExperimental right
+switcher - p             : kwmc space -fExperimental previous
 
-switcher + shift - left    :   kwmc window -m space left;\
+switcher + shift - left  : kwmc window -m space left;\
                             kwmc space -fExperimental left
 
-switcher + shift - right    :   kwmc window -m space right;\
+switcher + shift - right : kwmc window -m space right;\
                             kwmc space -fExperimental right
 
-switcher + shift - 1    :   kwmc display -f 0
-switcher + shift - 2    :   kwmc display -f 1
-switcher + shift - 3    :   kwmc display -f 2
+switcher + shift - 1     : kwmc display -f 0
+cmd + ctrl - 1           : kwmc display -f 0
+switcher + shift - 2     : kwmc display -f 1
+cmd + ctrl - 2           : kwmc display -f 1
+switcher + shift - 3     : kwmc display -f 2
+cmd + ctrl  - 3          : kwmc display -f 2
 
 
 
