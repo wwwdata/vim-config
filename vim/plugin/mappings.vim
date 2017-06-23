@@ -81,3 +81,10 @@ nnoremap <leader>gw :Gwrite<CR>
 " create jumplist entry for j and k jumps with more than 1 line
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
+
+" gui rebindings for auto pairs
+imap <D-e> <M-e>
+imap <D-p> <M-p>
+imap <D-m> <M-m>
+imap <D-e> <M-e>
+imap <D-b> <M-b>
