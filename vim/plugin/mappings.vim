@@ -88,3 +88,6 @@ imap <D-p> <M-p>
 imap <D-m> <M-m>
 imap <D-e> <M-e>
 imap <D-b> <M-b>
+
+" sudo write
+com W :execute ':silent w !sudo tee % > /dev/null' | :edit!
