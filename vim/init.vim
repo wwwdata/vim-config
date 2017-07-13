@@ -47,7 +47,8 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
-Plug 'steelsojka/deoplete-flow', { 'for': 'javascript' }
+"Plug 'steelsojka/deoplete-flow', { 'for': 'javascript' }
+Plug 'wokalski/autocomplete-flow', { 'for': 'javascript' }
 Plug 'wwwdata/vim-flow', { 'for': 'javascript' }
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'on': ['TernDef', 'TernDoc', 'TernDocBrowse', 'TernType', 'TernDefPreview', 'TernDefSplit', 'TernDefTab', 'TernRefs', 'TernRename'] }
 Plug 'ruanyl/vim-fixmyjs', { 'on': ['Fixmyjs'] }
