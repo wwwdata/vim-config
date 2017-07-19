@@ -36,7 +36,7 @@ Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 
-Plug 'benekastah/neomake'
+Plug 'benekastah/neomake', { 'do': 'npm install -g flow-vim-quickfix' }
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips', { 'on': [] }
 Plug 'honza/vim-snippets'

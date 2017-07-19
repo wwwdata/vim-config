@@ -31,7 +31,12 @@ function! SearchFlowBin()
   if executable(local_flow)
     let g:flow#flowpath = local_flow
     let g:deoplete#sources#flow#flow_bin = local_flow
-    let g:neomake_flow_flow_exe = local_flow
+    let g:neomake_flow_flow_maker = {
+          \ 'exe': 'sh',
+          \ 'args': ['-c', g:flow#flowpath.' --json 2> /dev/null | flow-vim-quickfix'],
+          \ 'errorformat': '%E%f:%l:%c\,%n: %m',
+          \ 'cwd': '%:p:h'
+          \ }
   endif
 endfunction
 
