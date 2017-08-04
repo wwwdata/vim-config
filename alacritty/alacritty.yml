@@ -1,4 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator
+dimensions:
+  columns: 80
+  lines: 24
 
 # The FreeType rasterizer needs to know the device DPI for best results
 # (changes require restart)
@@ -176,6 +179,12 @@ key_bindings:
   - { key: Back,                    chars: "\x7f"                        }
   - { key: Delete,                  chars: "\x1b[3~",  mode: AppKeypad   }
   - { key: Delete,                  chars: "\x1b[P",   mode: ~AppKeypad  }
+  - { key: J,        mods: Alt,     chars: "\x1bj"                       }
+  - { key: K,        mods: Alt,     chars: "\x1bk"                       }
+  - { key: H,        mods: Alt,     chars: "\x1bh"                       }
+  - { key: L,        mods: Alt,     chars: "\x1bl"                       }
+  - { key: E,        mods: Alt,     chars: "\x1be"                       }
+  - { key: A,        mods: Alt,     chars: "\x1ba"                       }
 
 # Mouse bindings
 #
