@@ -1,5 +1,3 @@
-autocmd! BufWritePost,BufReadPost * Neomake
-
 " automatically close preview window when done
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
@@ -14,15 +12,6 @@ augroup StartupIdleboot
   endif
 augroup END
 
-augroup my_neomake_signs
-  au!
-  autocmd! ColorScheme *
-    hi link NeomakeErrorSign GitGutterDelete
-    hi link NeomakeError NeomakeWarning
-    hi link NeomakeWarningSign NeomakeMessageSign
-    hi link NeomakeWarning NeomakeMessage
-augroup END
-
 function! SearchFlowBin()
   let local_flow = finddir('node_modules', '.;') . '/.bin/flow'
   if matchstr(local_flow, "^\/\\w") == ''
@@ -31,12 +20,7 @@ function! SearchFlowBin()
   if executable(local_flow)
     let g:flow#flowpath = local_flow
     let g:deoplete#sources#flow#flow_bin = local_flow
-    let g:neomake_flow_flow_maker = {
-          \ 'exe': 'sh',
-          \ 'args': ['-c', g:flow#flowpath.' --json 2> /dev/null | flow-vim-quickfix'],
-          \ 'errorformat': '%E%f:%l:%c\,%n: %m',
-          \ 'cwd': '%:p:h'
-          \ }
+    let g:ale_javascript_flow_executable = local_flow
   endif
 endfunction
 
@@ -48,7 +32,7 @@ function! SearchEslintBin()
     let local_eslint= getcwd() . "/" . local_eslint
   endif
   if executable(local_eslint)
-    let g:neomake_javascript_eslint_exe = local_eslint
+    let g:ale_javascript_eslint_executable = local_eslint
   endif
 endfunction
 
