@@ -75,7 +75,7 @@ Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
 Plug 'fwolanski/vim-clojure-conceal', { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'guns/vim-sexp', { 'for': 'clojure' }
-Plug 'neovim/node-host', { 'do': 'npm install' }
+Plug 'neovim/node-host', { 'do': 'npm install', 'tag': 'v0.0.1' }
 Plug 'clojure-vim/nvim-parinfer.js', { 'for': 'clojure', 'do': ':UpdateRemotePlugins' }
 Plug 'clojure-vim/async-clj-omni', { 'for': 'clojure' }
 source ~/.dotfiles/vim/plugins/goyo.vim
