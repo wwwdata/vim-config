@@ -38,7 +38,7 @@ Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 
 " Plug 'benekastah/neomake', { 'do': 'npm install -g flow-vim-quickfix' }
 Plug 'w0rp/ale'
-Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar', { 'tag': 'v2.7' }
 Plug 'SirVer/ultisnips', { 'on': [] }
 Plug 'honza/vim-snippets'
 Plug 'epilande/vim-react-snippets'
