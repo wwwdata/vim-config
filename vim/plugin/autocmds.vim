@@ -45,6 +45,8 @@ function! SearchPHPCSBin()
   endif
   if executable(local_phpcs)
     let ruleset = getcwd() . "/ruleset.xml"
+    let g:ale_php_phpcs_executable = local_phpcs
+    let g:ale_php_phpcs_standard = ruleset
     let g:neomake_php_phpcs_maker = {
       \ 'exe': local_phpcs,
       \ 'args': ['--report=csv', '--standard=' . ruleset, '--report-width=200', '--extensions=php'],
