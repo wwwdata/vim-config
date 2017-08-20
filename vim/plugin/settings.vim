@@ -1,5 +1,6 @@
 scriptencoding utf-8
 let g:seoul256_background = 235
+set termguicolors
 colo seoul256
 
 " other interesting themes
@@ -60,10 +61,6 @@ set foldlevelstart=99               " no initial folding
 
 set updatetime=1000                 " when to execute CursorHold
 set mouse=a                         " enable mouse support
-
-if has("gui_vimr")
-  set termguicolors                 " use gui background/foreground
-endif
 
 " italic comment highlight
 highlight Comment cterm=italic gui=italic
