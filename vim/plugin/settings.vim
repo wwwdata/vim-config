@@ -1,7 +1,12 @@
 scriptencoding utf-8
-let g:seoul256_background = 235
+" let g:seoul256_background = 235
 set termguicolors
-colo seoul256
+let g:gruvbox_improved_warnings=1
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_contrast_light='hard'
+set background=dark
+colo gruvbox
 
 " other interesting themes
 "baycomb

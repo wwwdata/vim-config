@@ -10,6 +10,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'junegunn/gv.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'morhetz/gruvbox'
 
 " Tmux statusline generator
 " Plug 'edkolev/tmuxline.vim'
