@@ -30,4 +30,5 @@ endfunction
 
 autocmd FileType javascript call SearchPrettier()
 autocmd BufWritePre *.js if g:prettier_enabled | Neoformat | endif
-let g:neoformat_try_formatprg = 1
+let g:neoformat_try_formatprg=1
+let g:neoformat_only_msg_on_error=1
