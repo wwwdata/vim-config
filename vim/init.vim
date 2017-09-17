@@ -37,7 +37,6 @@ Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 
-" Plug 'benekastah/neomake', { 'do': 'npm install -g flow-vim-quickfix' }
 Plug 'w0rp/ale'
 Plug 'majutsushi/tagbar', { 'tag': 'v2.7' }
 Plug 'SirVer/ultisnips', { 'on': [] }
@@ -47,13 +46,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
-"Plug 'steelsojka/deoplete-flow', { 'for': 'javascript' }
-Plug 'wokalski/autocomplete-flow', { 'for': 'javascript' }
 Plug 'wwwdata/vim-flow', { 'for': 'javascript' }
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'on': ['TernDef', 'TernDoc', 'TernDocBrowse', 'TernType', 'TernDefPreview', 'TernDefSplit', 'TernDefTab', 'TernRefs', 'TernRename'] }
-Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 Plug 'Shougo/echodoc.vim'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -67,6 +61,9 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-projectionist'
 Plug 'retorillo/istanbul.vim', { 'on': ['IstanbulClear', 'IstanbulUpdate', 'IstanbulMode'] }
 Plug 'sbdchd/neoformat', { 'do': 'npm install -g prettier' }
+Plug 'roxma/nvim-completion-manager', { 'do': 'pip3 install --user neovim jedi mistune psutil setproctitle' }
+Plug 'roxma/nvim-cm-tern', { 'for': 'javascript', 'do': 'npm install' }
+Plug 'roxma/ncm-flow', { 'for': 'javascript' }
 
 " Clojure stuff
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
