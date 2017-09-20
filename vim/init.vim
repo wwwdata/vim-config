@@ -60,7 +60,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-projectionist'
 Plug 'retorillo/istanbul.vim', { 'on': ['IstanbulClear', 'IstanbulUpdate', 'IstanbulMode'] }
-Plug 'sbdchd/neoformat', { 'do': 'npm install -g prettier' }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 Plug 'roxma/nvim-completion-manager', { 'do': 'pip3 install --user neovim jedi mistune psutil setproctitle' }
 Plug 'roxma/nvim-cm-tern', { 'for': 'javascript', 'do': 'npm install' }
 Plug 'roxma/ncm-flow', { 'for': 'javascript' }
