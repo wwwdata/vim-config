@@ -63,6 +63,7 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typ
 Plug 'roxma/nvim-completion-manager', { 'do': 'pip3 install --user neovim jedi mistune psutil setproctitle' }
 Plug 'roxma/nvim-cm-tern', { 'for': 'javascript', 'do': 'npm install' }
 Plug 'roxma/ncm-flow', { 'for': 'javascript' }
+Plug 'wellle/targets.vim'
 
 " Clojure stuff
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
