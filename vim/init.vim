@@ -46,8 +46,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'wwwdata/vim-flow', { 'for': 'javascript' }
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'on': ['TernDef', 'TernDoc', 'TernDocBrowse', 'TernType', 'TernDefPreview', 'TernDefSplit', 'TernDefTab', 'TernRefs', 'TernRename'] }
 Plug 'Shougo/echodoc.vim'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -61,8 +59,7 @@ Plug 'tpope/vim-projectionist'
 Plug 'retorillo/istanbul.vim', { 'on': ['IstanbulClear', 'IstanbulUpdate', 'IstanbulMode'] }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 Plug 'roxma/nvim-completion-manager', { 'do': 'pip3 install --user neovim jedi mistune psutil setproctitle' }
-Plug 'roxma/nvim-cm-tern', { 'for': 'javascript', 'do': 'npm install' }
-Plug 'roxma/ncm-flow', { 'for': 'javascript' }
+Plug 'autozimu/LanguageClient-neovim', { 'do': [':UpdateRemotePlugins', 'npm install -g javascript-typescript-langserver', 'npm install -g flow-language-server'] }
 Plug 'wellle/targets.vim'
 
 " Clojure stuff
