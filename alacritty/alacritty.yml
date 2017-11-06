@@ -247,6 +247,10 @@ key_bindings:
   - { key: L,        mods: Alt,     chars: "\x1bl"                       }
   - { key: E,        mods: Alt,     chars: "\x1be"                       }
   - { key: A,        mods: Alt,     chars: "\x1ba"                       }
+  - { key: Key0,     mods: Control, action: ResetFontSize                }
+  - { key: Equals,   mods: Control, action: IncreaseFontSize             }
+  - { key: Subtract, mods: Control, action: DecreaseFontSize             }
+
 
 # Mouse bindings
 #
