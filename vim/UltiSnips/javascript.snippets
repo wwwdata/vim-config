@@ -22,25 +22,42 @@ afterEach(function() {
 });
 endsnippet
 
-snippet rnfc "React Native Functional Component" b
-/* @flow weak */
+snippet rnfc "React Native Functional Component"
+/* @flow */
 
-import React from 'react';
+import * as React from 'react';
+import { View } from 'react-native';
 
-const ${1:`!v expand('%:t:r')`} = ({ ${3:...props} }) => (
-	$4
+export type PropTypes = {
+	foo: string,
+}
+
+const ${1:`!v expand('%:t:r')`} = ({ ${3:...props} }: PropTypes) => (
+	${4:<View />}
 );
 
 $1.defaultProps = {
 };
 
-$1.sampleProps = () => ({
-});
-
-$1.propTypes = {
-};
-
 export default $1;
+endsnippet
+
+snippet storybook "React Native storybook"
+/* @flow */
+
+import * as React from 'react'
+import Description from 'storybook/util/Description'
+import { storiesOf } from '@storybook/react-native'
+import { action } from '@storybook/addon-actions'
+import $1 from 'app/ui/presentational/$1'
+
+storiesOf('${1:`!v expand('%:t:r:r')`}', module)
+	.addDecorator(story => <Description description="${2:$1 does ...}">{story()}</Description>)
+	.add('Default', () => <$1 />)
+endsnippet
+
+snippet ip "Import presentational"
+import ${1:Component} from 'app/ui/presentational/$1'
 endsnippet
 
 snippet esl "eslint disable"
