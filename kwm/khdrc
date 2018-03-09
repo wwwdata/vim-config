@@ -23,7 +23,7 @@ shift + alt - k : chunkc tiling::window --swap north
 shift + alt - l : chunkc tiling::window --swap east
 
 # move window
-shift + cmd - h : chunkc tiling::window --warp west
+# shift + cmd - h : chunkc tiling::window --warp west
 shift + cmd - j : chunkc tiling::window --warp south
 shift + cmd - k : chunkc tiling::window --warp north
 shift + cmd - l : chunkc tiling::window --warp east
@@ -52,8 +52,8 @@ shift + alt - 6 : chunkc tiling::window --send-to-desktop 6
 cmd + alt - x   : `id=$(chunkc get _last_active_desktop); khd -p "cmd + alt - $id" &> /dev/null`
 
 # focus monitor
-ctrl + alt - z  : chunkc tiling::monitor -f prev
-ctrl + alt - c  : chunkc tiling::monitor -f next
+ctrl + alt - left  : chunkc tiling::monitor -f prev
+ctrl + alt - right  : chunkc tiling::monitor -f next
 ctrl + alt - 1  : chunkc tiling::monitor -f 1
 ctrl + alt - 2  : chunkc tiling::monitor -f 2
 ctrl + alt - 3  : chunkc tiling::monitor -f 3
@@ -112,8 +112,8 @@ alt - w : chunkc tiling::window --toggle split
 alt - t : chunkc tiling::window --toggle float
 
 # toggle sticky, float and resize to picture-in-picture size
-alt - s : chunkc tiling::window --toggle sticky;\
-          chunkc tiling::window --warp-floating pip-right
+#alt - s : chunkc tiling::window --toggle sticky;\
+          #chunkc tiling::window --warp-floating pip-right
 
 # float next window to be tiled
 shift + alt - t : chunkc set window_float_next 1
