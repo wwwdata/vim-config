@@ -53,11 +53,19 @@ import $1 from 'app/ui/presentational/$1'
 
 storiesOf('${1:`!v expand('%:t:r:r')`}', module)
 	.addDecorator(story => <Description description="${2:$1 does ...}">{story()}</Description>)
-	.add('Default', () => <$1 />)
+	.add('Default', () => <$1 onPress={action('onPress')}/>)
 endsnippet
 
 snippet ip "Import presentational"
 import ${1:Component} from 'app/ui/presentational/$1'
+endsnippet
+
+snippet ic "Import connected"
+import ${1:Component} from 'app/ui/connected/$1'
+endsnippet
+
+snippet il "Import layout"
+import ${1:Component} from 'app/ui/layouts/$1'
 endsnippet
 
 snippet esl "eslint disable"
