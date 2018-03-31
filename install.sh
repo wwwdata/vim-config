@@ -10,10 +10,12 @@ echo "---> Brew restore done"
 
 echo ""
 echo "---> ZSH"
-git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-mkdir -p ~/.oh-my-zsh/custom/themes
-git clone git@github.com:bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/zsh/zlogin ~/.zlogin
+ln -s ~/.dotfiles/zsh/zlogout ~/.zlogout
+ln -s ~/.dotfiles/zsh/zpreztorc ~/.zpreztorc
+ln -s ~/.dotfiles/zsh/zshenv ~/.zshenv
 echo "---> ZSH done"
 
 echo ""
