@@ -57,7 +57,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-projectionist'
 Plug 'retorillo/istanbul.vim', { 'on': ['IstanbulClear', 'IstanbulUpdate', 'IstanbulMode'] }
-Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'], 'commit': '52793e68bf04619b8ef915415d7f35494e6773bf' }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 Plug 'roxma/nvim-completion-manager', { 'do': 'pip3 install --user neovim jedi mistune psutil setproctitle' }
 Plug 'autozimu/LanguageClient-neovim', { 'do': 'npm install -g javascript-typescript-langserver flow-language-server' }
 Plug 'wellle/targets.vim'
