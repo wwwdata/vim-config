@@ -74,6 +74,9 @@ Plug 'guns/vim-sexp', { 'for': 'clojure' }
 Plug 'neovim/node-host', { 'do': 'npm install', 'tag': 'v0.0.1' }
 Plug 'clojure-vim/nvim-parinfer.js', { 'for': 'clojure', 'do': ':UpdateRemotePlugins' }
 Plug 'clojure-vim/async-clj-omni', { 'for': 'clojure' }
+
+" Dart
+Plug 'dart-lang/dart-vim-plugin'
 source ~/.dotfiles/vim/plugins/goyo.vim
 
 " PHP stuff, delete garbage later again
