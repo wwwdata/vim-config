@@ -50,7 +50,6 @@ set listchars+=trail:•              " BULLET (U+2022, UTF-8: E2 80 A2)
 set nojoinspaces                    " don't autoinsert two spaces after '.', '?', '!' for join command
 set hidden                          " allow buffer hiding without save
 
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1 " neovim can display a nice cursor line in insert mode that blinks
 set inccommand=split                " nice preview of search and replace actions
 
 set showmatch                       " show matching brackets
