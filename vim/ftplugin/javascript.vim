@@ -32,6 +32,7 @@ if executable('javascript-typescript-stdio')
 let g:LanguageClient_serverCommands['javascript'] = ['javascript-typescript-stdio']
 let g:LanguageClient_serverCommands['javascript.jsx'] = ['javascript-typescript-stdio']
 let g:LanguageClient_serverCommands['javascript.jsx.flow'] = ['flow-language-server', '--stdio']
+let g:LanguageClient_rootMarkers = ['.root', 'package.json']
 else
   echo "javascript-typescript-stdio not installed!\n"
   :cq

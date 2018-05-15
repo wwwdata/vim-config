@@ -60,7 +60,7 @@ Plug 'tpope/vim-projectionist'
 Plug 'retorillo/istanbul.vim', { 'on': ['IstanbulClear', 'IstanbulUpdate', 'IstanbulMode'] }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 Plug 'roxma/nvim-completion-manager', { 'do': 'pip3 install --user neovim jedi mistune psutil setproctitle' }
-Plug 'autozimu/LanguageClient-neovim', { 'do': 'npm install -g javascript-typescript-langserver flow-language-server' }
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh && npm install -g javascript-typescript-langserver flow-language-server' }
 Plug 'wellle/targets.vim'
 
 " Clojure stuff
