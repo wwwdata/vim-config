@@ -125,7 +125,7 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_DUPS
 
-source /usr/local/Cellar/tmuxinator-completion/0.9.0/share/zsh/site-functions/_tmuxinator
+source /usr/local/Cellar/tmuxinator-completion/0.11.2/share/zsh/site-functions/_tmuxinator
 
 # additional secret stuff like api keys
 source $HOME/.dotfiles/zsh/private.zsh
