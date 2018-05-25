@@ -7,3 +7,4 @@ nmap <leader>ll :call LanguageClient_textDocument_references()<CR>
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_serverCommands = {}
 let g:LanguageClient_serverCommands['dart'] = ['dart_language_server']
+autocmd BufWritePost * :DartFmt
