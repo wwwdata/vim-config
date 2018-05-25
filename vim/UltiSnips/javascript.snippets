@@ -1,23 +1,23 @@
 snippet des "describe('test', () => {})"
-describe('${1:<SomeComponent />}', function() {
+describe('${1:<SomeComponent />}', (): void => {
 	${2}
 });
 endsnippet
 
 snippet it "it('testing', () => {})"
-it('${1:just works}', function() {
+it('${1:just works}', (): void => {
 	${2}
 });
 endsnippet
 
 snippet bef "beforeEach()"
-beforeEach(function() {
+beforeEach((): void => {
 	${1}
 });
 endsnippet
 
 snippet aft "afterEach()"
-afterEach(function() {
+afterEach((): void => {
 	${1}
 });
 endsnippet
