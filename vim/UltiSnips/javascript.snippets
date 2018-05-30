@@ -23,16 +23,16 @@ afterEach((): void => {
 endsnippet
 
 snippet rnfc "React Native Functional Component"
-/* @flow */
+// @flow
 
 import * as React from 'react';
 import { View } from 'react-native';
 
-export type PropTypes = {
+type Props = {
 	foo: string,
 }
 
-const ${1:`!v expand('%:t:r')`} = ({ ${3:...props} }: PropTypes) => (
+const ${1:`!v expand('%:t:r')`} = ({ ${3:...props} }: Props) => (
 	${4:<View />}
 );
 
