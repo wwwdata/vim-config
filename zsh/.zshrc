@@ -110,7 +110,7 @@ export GOPATH=$HOME/Go
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
 # use hub instead of git
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 
 alias vim=nvim
 alias yip=yarn install --pure-lockfile
