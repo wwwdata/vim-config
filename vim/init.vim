@@ -59,8 +59,11 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-projectionist'
 Plug 'retorillo/istanbul.vim', { 'on': ['IstanbulClear', 'IstanbulUpdate', 'IstanbulMode'] }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh && npm install -g javascript-typescript-langserver flow-language-server' }
+Plug 'natebosch/vim-lsc'
+let g:lsc_server_commands = {'dart': 'dart_language_server'}
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
 Plug 'wellle/targets.vim'
 
 " Clojure stuff
