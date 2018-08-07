@@ -1,0 +1,17 @@
+snippet built "built value class generator"
+abstract class ${1:CLASS_NAME} implements Built<$1, $1Builder> {
+	factory $1([updates($1Builder b)]) = _$$1;
+	$1._();
+
+	$0
+
+	static Serializer<$1> get serializer => _$${1/.*/\l$0/}Serializer;
+}
+endsnippet
+
+snippet ipbuilt "import built value deps"
+import 'package:built_value/built_value.dart';
+import 'package:built_value/serializer.dart';
+
+part '${1:`!v expand('%:t:r')`.g.dart}';
+endsnippet

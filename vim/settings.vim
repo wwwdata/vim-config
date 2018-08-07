@@ -7,6 +7,9 @@ let g:gruvbox_contrast_dark='soft'
 set background=dark
 colo gruvbox
 
+let mapleader = ' '
+let maplocalleader = ' '
+
 " other interesting themes
 "baycomb
 "bensday

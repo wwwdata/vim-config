@@ -1,6 +1,9 @@
 " clear search results
 nnoremap <leader>sc :noh<cr>
 
+" reload configuration
+nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
+
 " toggle fold
 " nnoremap <Tab> za
 
@@ -75,6 +78,9 @@ nnoremap <leader>gvc :GV!<CR>
 nnoremap <leader>gvq :GV?<CR>
 nnoremap <leader>gw :Gwrite<CR>
 
+" completion
+nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
+
 " Terminal stuff
 :tnoremap <Esc> <C-\><C-n>
 
@@ -89,5 +95,18 @@ imap <D-m> <M-m>
 imap <D-e> <M-e>
 imap <D-b> <M-b>
 
-" sudo write
-com W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+nmap <C-Space> <Plug>(ncm2_manual_trigger)
+imap <C-Space> <Plug>(ncm2_manual_trigger)
+let g:lsc_auto_map = {
+    \ 'GoToDefinition': '<C-]>',
+    \ 'FindReferences': 'gr',
+    \ 'NextReference': '<C-n>',
+    \ 'PreviousReference': '<C-p>',
+    \ 'FindImplementations': 'gI',
+    \ 'FindCodeActions': 'ga',
+    \ 'DocumentSymbol': 'go',
+    \ 'WorkspaceSymbol': 'gS',
+    \ 'Rename': 'gR',
+    \ 'ShowHover': 'K',
+    \ 'Completion': 'completefunc',
+    \}

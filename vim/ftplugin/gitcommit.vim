@@ -1,2 +1,0 @@
-setlocal nofoldenable
-setlocal spell
