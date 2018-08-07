@@ -1,0 +1,17 @@
+{
+	"languageserver": {
+		"dart": {
+			"command": "dart_language_server",
+			"args": [],
+			"filetypes": ["dart"],
+			"initializationOptions": {},
+			"forceFullSync": true,
+			"settings": {
+				"dart": {
+					"validation": {},
+					"completion": {}
+				}
+			}
+		}
+	}
+}

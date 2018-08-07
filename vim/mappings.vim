@@ -91,23 +91,3 @@ imap <D-p> <M-p>
 imap <D-m> <M-m>
 imap <D-e> <M-e>
 imap <D-b> <M-b>
-
-nmap <C-Space> <Plug>(ncm2_manual_trigger)
-imap <C-Space> <Plug>(ncm2_manual_trigger)
-let g:lsc_auto_map = {
-    \ 'GoToDefinition': '<C-]>',
-    \ 'FindReferences': 'gr',
-    \ 'NextReference': '<C-n>',
-    \ 'PreviousReference': '<C-p>',
-    \ 'FindImplementations': 'gI',
-    \ 'FindCodeActions': 'ga',
-    \ 'DocumentSymbol': 'go',
-    \ 'WorkspaceSymbol': 'gS',
-    \ 'Rename': 'gR',
-    \ 'ShowHover': 'K',
-    \ 'Completion': 'completefunc',
-    \}
-
-" completion
-nnoremap <leader>la :LSClientAllDiagnostics<CR>
-

@@ -27,10 +27,9 @@ Plug 'kshenoy/vim-signature'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vimwiki/vimwiki'
 
-" auto completion
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'natebosch/vim-lsc'
+" this does not really do the trick.. currently i manually package until a new
+" release was made
+Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'Shougo/echodoc.vim'
 
