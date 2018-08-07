@@ -78,9 +78,6 @@ nnoremap <leader>gvc :GV!<CR>
 nnoremap <leader>gvq :GV?<CR>
 nnoremap <leader>gw :Gwrite<CR>
 
-" completion
-nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
-
 " Terminal stuff
 :tnoremap <Esc> <C-\><C-n>
 
@@ -110,3 +107,7 @@ let g:lsc_auto_map = {
     \ 'ShowHover': 'K',
     \ 'Completion': 'completefunc',
     \}
+
+" completion
+nnoremap <leader>la :LSClientAllDiagnostics<CR>
+
