@@ -30,7 +30,10 @@ Plug 'vimwiki/vimwiki'
 " auto completion
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
-Plug 'natebosch/vim-lsc'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'Shougo/echodoc.vim'
 

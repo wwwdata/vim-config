@@ -1,5 +1,5 @@
 " enable ncm2 for all buffers
-" autocmd BufEnter * call ncm2#enable_for_buffer()
+autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " note that you must keep `noinsert` in completeopt, you must not use
 " `longest`. The others are optional. Read `:help completeopt` for
@@ -24,4 +24,11 @@ let g:UltiSnipsJumpBackwardTrigger	= "<c-k>"
 let g:UltiSnipsRemoveSelectModeMappings = 0
 let g:UltiSnipsSnippetsDir="~/.dotfiles/vim/ultisnips"
 
-let g:lsc_server_commands = {'dart': 'dart_language_server'}
+let g:LanguageClient_serverCommands = {
+    \ 'dart': ['dart_language_server'],
+    \ }
+
+
+let g:LanguageClient_rootMarkers = {
+      \ 'dart': ['pubspec.yaml'],
+      \ }

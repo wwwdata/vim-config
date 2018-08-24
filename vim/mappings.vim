@@ -94,20 +94,14 @@ imap <D-b> <M-b>
 
 nmap <C-Space> <Plug>(ncm2_manual_trigger)
 imap <C-Space> <Plug>(ncm2_manual_trigger)
-let g:lsc_auto_map = {
-    \ 'GoToDefinition': '<C-]>',
-    \ 'FindReferences': 'gr',
-    \ 'NextReference': '<C-n>',
-    \ 'PreviousReference': '<C-p>',
-    \ 'FindImplementations': 'gI',
-    \ 'FindCodeActions': 'ga',
-    \ 'DocumentSymbol': 'go',
-    \ 'WorkspaceSymbol': 'gS',
-    \ 'Rename': 'gR',
-    \ 'ShowHover': 'K',
-    \ 'Completion': 'completefunc',
-    \}
 
-" completion
-nnoremap <leader>la :LSClientAllDiagnostics<CR>
-
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> <C-]> :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> gR :call LanguageClient#textDocument_rename()<CR>
+nnoremap <silent> gI :call LanguageClient#textDocument_implementation()<CR>
+nnoremap <silent> gr :call LanguageClient#textDocument_references()<CR>
+nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
+nnoremap <leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
+nnoremap <leader>lS :call LanguageClient#workspace_symbol()<CR>
+nnoremap <silent> ga :call LanguageClient#textDocument_codeAction()<CR>
+nnoremap <silent> go :call LanguageClient#textDocument_documentSymbol()<CR>
