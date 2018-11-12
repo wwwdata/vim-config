@@ -105,3 +105,10 @@ nnoremap <leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
 nnoremap <leader>lS :call LanguageClient#workspace_symbol()<CR>
 nnoremap <silent> ga :call LanguageClient#textDocument_codeAction()<CR>
 nnoremap <silent> go :call LanguageClient#textDocument_documentSymbol()<CR>
+
+
+" fzf
+imap <c-x><c-l> <plug>(fzf-complete-line)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+imap <c-x><c-k> <plug>(fzf-complete-word)
