@@ -250,6 +250,7 @@ key_bindings:
   - { key: Key0,     mods: Control, action: ResetFontSize                }
   - { key: Equals,   mods: Control, action: IncreaseFontSize             }
   - { key: Subtract, mods: Control, action: DecreaseFontSize             }
+  - { key: Q, mods: Control, chars: "\x11" }
 
 
 # Mouse bindings

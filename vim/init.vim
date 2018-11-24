@@ -28,13 +28,15 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'vimwiki/vimwiki'
 
 " auto completion
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-Plug 'ncm2/ncm2-ultisnips'
+"Plug 'ncm2/ncm2'
+"Plug 'roxma/nvim-yarp'
+"Plug 'autozimu/LanguageClient-neovim', {
+    "\ 'branch': 'next',
+    "\ 'do': 'bash install.sh',
+    "\ }
+"Plug 'ncm2/ncm2-ultisnips'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'Shougo/denite.nvim'
 Plug 'Shougo/echodoc.vim'
 
 source ~/.dotfiles/vim/plug/airline.vim
