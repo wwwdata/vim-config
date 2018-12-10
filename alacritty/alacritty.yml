@@ -1,7 +1,8 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator
-dimensions:
-  columns: 80
-  lines: 24
+window:
+  dimensions:
+    columns: 80
+    lines: 24
 
 # The FreeType rasterizer needs to know the device DPI for best results
 # (changes require restart)
@@ -40,8 +41,8 @@ font:
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
-    x: 0.0
-    y: 0.0
+    x: 0
+    y: 0
 
   use_thin_strokes: false
 
