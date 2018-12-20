@@ -42,7 +42,7 @@ autocmd CursorHoldI * silent! call CocActionAsync('showSignatureHelp')
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-vmap <leader>gA  <Plug>(coc-codeaction-selected)
+vmap <leader>ga  <Plug>(coc-codeaction-selected)
 nmap <leader>gA  <Plug>(coc-codeaction-selected)
 
 nmap <silent> <C-]> <Plug>(coc-definition)
@@ -51,6 +51,8 @@ nmap <silent> gI <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 " the <CR> should not be necessary but i get some unwanted output
 nmap <silent> ga <Plug>(coc-codeaction-selected)<CR>
+
+autocmd User CocQuickfixChange :call fzf_quickfix#run()
 
 " note that you must keep `noinsert` in completeopt, you must not use
 " `longest`. The others are optional. Read `:help completeopt` for
