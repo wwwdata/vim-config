@@ -26,6 +26,7 @@ Plug 'natebosch/dartlang-snippets'
 Plug 'kshenoy/vim-signature'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vimwiki/vimwiki'
+Plug 'cbxsn/vim-gitmoji'
 
 " auto completion
 "Plug 'ncm2/ncm2'

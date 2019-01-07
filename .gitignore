@@ -3,3 +3,4 @@ plugged
 *.spl
 zsh/private.zsh
 vim/spell
+vim/pack
