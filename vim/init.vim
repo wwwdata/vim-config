@@ -40,6 +40,11 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/echodoc.vim'
 
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'leafgarland/typescript-vim'
+
 source ~/.dotfiles/vim/plug/airline.vim
 
 " Language
@@ -53,3 +58,4 @@ call plug#end()
 source ~/.dotfiles/vim/settings.vim
 source ~/.dotfiles/vim/mappings.vim
 source ~/.dotfiles/vim/plug/autocompletion.vim
+source ~/.dotfiles/vim/plug/prettier.vim

@@ -24,3 +24,27 @@ class $1 extends StatelessWidget {
 	}
 }
 endsnippet
+
+snippet mtest "unit test file"
+import 'package:test/test.dart';
+
+void main() {
+	test('$1', () {
+		$0
+	});
+}
+endsnippet
+
+snippet trl "translation string"
+String get $1 {
+	return Intl.message(
+		'$2',
+		name: '$1',
+		desc: '$0',
+	);
+}
+endsnippet
+
+snippet al "app localizations"
+AppLocalizations.of(context).
+endsnippet
