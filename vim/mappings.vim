@@ -100,3 +100,5 @@ imap <c-x><c-k> <plug>(fzf-complete-word)
 
 " gitmoji
 inoremap <expr> <C-X><C-E> gitmoji#complete()
+
+nnoremap <C-p> :pc<CR>
