@@ -1,8 +1,10 @@
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+export ZSH="/Users/ben/.oh-my-zsh"
 ZSH_THEME="powerlevel9k/powerlevel9k"
+
+
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_timer)
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -96,11 +98,6 @@ export LANG=en_US.UTF-8
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
 
 export EDITOR='nvim'
 
