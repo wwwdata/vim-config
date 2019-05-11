@@ -109,6 +109,9 @@ export PATH=~/.dotfiles/zsh/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/us
 export GOPATH=$HOME/Go
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:~/.dotfiles/zsh/scripts
+# homebrew ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 
 # use hub instead of git
 # eval "$(hub alias -s)"
@@ -122,8 +125,6 @@ alias mutt='TERM=screen-256color mutt'
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_DUPS
-
-source /usr/local/Cellar/tmuxinator-completion/0.15.0/share/zsh/site-functions/_tmuxinator
 
 # additional secret stuff like api keys
 source $HOME/.dotfiles/zsh/private.zsh
