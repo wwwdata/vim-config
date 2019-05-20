@@ -48,7 +48,7 @@ Plug 'leafgarland/typescript-vim'
 source ~/.dotfiles/vim/plug/airline.vim
 
 " Language
-Plug 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin', {'commit': 'db57ccbdea521d22939dfcf129d3a37e9328d16b'}
 Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
 let dart_format_on_save = 1
 let dart_style_guide = 2

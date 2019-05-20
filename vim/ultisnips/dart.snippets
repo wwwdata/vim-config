@@ -48,3 +48,23 @@ endsnippet
 snippet al "app localizations"
 AppLocalizations.of(context).
 endsnippet
+
+snippet mt "main theme"
+MainTheme.of(context).
+endsnippet
+
+snippet wtest "widget test file"
+import 'package:flutter_test/flutter_test.dart';
+
+void main() {
+	testWidgets('$1', (WidgetTester tester) async {
+		$0
+	});
+}
+endsnippet
+
+snippet tw "test widget"
+testWidgets('$1', (WidgetTester tester) async {
+	$0
+});
+endsnippet
