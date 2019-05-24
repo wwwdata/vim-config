@@ -104,6 +104,7 @@ export EDITOR='nvim'
 # Customize to your needs...
 export PATH=~/.dotfiles/zsh/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/texlive/2016/bin/x86_64-darwin
 export GOPATH=$HOME/Go
+export GO111MODULE=on
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:~/.dotfiles/zsh/scripts
 # homebrew ruby
