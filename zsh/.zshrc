@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 
-plugins=(git)
+plugins=(git gitfast git-extras z encode64 extract vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_timer)
