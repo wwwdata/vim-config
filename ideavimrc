@@ -1,0 +1,29 @@
+set surround
+set multiple-cursors
+let mapleader = ' '
+let maplocalleader = ' '
+set ignorecase
+set visualbell
+set noerrorbells
+" window
+nnoremap <leader>wv <C-w>v<C-w>l
+nnoremap <leader>wh <C-w>s<C-w>j
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nnoremap <C-q> :q<CR>
+
+" intellij actions mappings
+nnoremap <leader>mi :action ImplementMethods<CR>
+nnoremap <leader>mo :action OverrideMethods<CR>
+nnoremap <leader>mr :action Refactorings.QuickListPopupAction<CR>
+
+nnoremap <leader>pf :action FileOpenGroup<CR>
+
+nnoremap [l :action GotoPreviousError<CR>
+nnoremap ]l :action GotoNextError<CR>
+nnoremap [c :action VcsShowPrevChangeMarker<CR>
+nnoremap ]c :action VcsShowNextChangeMarker<CR>
