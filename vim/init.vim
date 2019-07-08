@@ -36,7 +36,7 @@ Plug 'cbxsn/vim-gitmoji'
     "\ 'do': 'bash install.sh',
     "\ }
 "Plug 'ncm2/ncm2-ultisnips'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/echodoc.vim'
 
