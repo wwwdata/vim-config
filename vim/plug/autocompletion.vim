@@ -23,6 +23,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gl :CocList <CR>
+nmap <silent> go :CocList outline<CR>
+nmap <silent> gL :CocListResume <CR>
 
 " Use K for show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -41,16 +44,13 @@ autocmd CursorHoldI * silent! call CocActionAsync('showSignatureHelp')
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-vmap <leader>ga  <Plug>(coc-codeaction-selected)
-nmap <leader>gA  <Plug>(coc-codeaction-selected)
-
 nmap <silent> gR <Plug>(coc-rename)
 nmap <silent> gI <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> ge <Plug>(coc-refactor)
 " the <CR> should not be necessary but i get some unwanted output
 nmap <silent> ga <Plug>(coc-codeaction-selected)<CR>
+nmap <silent> gf <Plug>(coc-fix-current)
 
 autocmd User CocQuickfixChange :call fzf_quickfix#run()
 
