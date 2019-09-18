@@ -45,10 +45,10 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 vmap <leader>ga  <Plug>(coc-codeaction-selected)
 nmap <leader>gA  <Plug>(coc-codeaction-selected)
 
-nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> gR <Plug>(coc-rename)
 nmap <silent> gI <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> ge <Plug>(coc-refactor)
 " the <CR> should not be necessary but i get some unwanted output
 nmap <silent> ga <Plug>(coc-codeaction-selected)<CR>
 

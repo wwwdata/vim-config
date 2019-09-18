@@ -1,16 +1,16 @@
 {
+  "codeLens.enable": true,
+  "suggest.echodocSupport": true,
+  "diagnostic.virtualText": true,
   "languageserver": {
     "dart": {
-      "command": "dart_language_server",
-      "args": [],
+      "command": "dart",
+      "args": [
+        "/Users/benbieker/Development/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot",
+        "--lsp"
+      ],
       "filetypes": ["dart"],
-      "initializationOptions": {},
-      "settings": {
-        "dart": {
-          "validation": {},
-          "completion": {}
-        }
-      }
+      "disableDynamicRegister": true
     }
   }
 }
