@@ -50,6 +50,7 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> ge <Plug>(coc-refactor)
 " the <CR> should not be necessary but i get some unwanted output
 nmap <silent> ga <Plug>(coc-codeaction-selected)<CR>
+vmap <silent> ga <Plug>(coc-codeaction-selected)<CR>
 nmap <silent> gf <Plug>(coc-fix-current)
 
 autocmd User CocQuickfixChange :call fzf_quickfix#run()
