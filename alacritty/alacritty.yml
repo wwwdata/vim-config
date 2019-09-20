@@ -4,12 +4,6 @@ window:
     columns: 80
     lines: 24
 
-# The FreeType rasterizer needs to know the device DPI for best results
-# (changes require restart)
-dpi:
-  x: 96.0
-  y: 96.0
-
 # Display tabs using this many cells (changes require restart)
 tabspaces: 8
 
@@ -46,8 +40,10 @@ font:
 
   use_thin_strokes: false
 
+live_config_reload: true
+
 # Should display the render timer
-render_timer: false
+debug.render_timer: false
 
 # Colors (Gruvbox dark)
 colors:
