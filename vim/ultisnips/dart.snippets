@@ -26,7 +26,7 @@ class $1 extends StatelessWidget {
 endsnippet
 
 snippet mtest "unit test file"
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
 	test('$1', () {
@@ -67,4 +67,12 @@ snippet tw "test widget"
 testWidgets('$1', (WidgetTester tester) async {
 	$0
 });
+endsnippet
+
+snippet mock "create mockito class"
+class Mocked$1 extends Mock implements $1 {}
+endsnippet
+
+snippet ath "appTheme"
+final appTheme = Provider.of<AppTheme>(context);
 endsnippet

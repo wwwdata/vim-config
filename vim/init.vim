@@ -27,6 +27,8 @@ Plug 'kshenoy/vim-signature'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vimwiki/vimwiki'
 Plug 'cbxsn/vim-gitmoji'
+Plug 'udalov/kotlin-vim'
+Plug 'tpope/vim-projectionist'
 
 " auto completion
 "Plug 'ncm2/ncm2'
@@ -59,3 +61,4 @@ source ~/.dotfiles/vim/settings.vim
 source ~/.dotfiles/vim/mappings.vim
 source ~/.dotfiles/vim/plug/autocompletion.vim
 source ~/.dotfiles/vim/plug/prettier.vim
+source ~/.dotfiles/vim/plug/vimwiki.vim
