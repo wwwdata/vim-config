@@ -118,6 +118,7 @@ alias vim=nvim
 alias yip=yarn install --pure-lockfile
 alias ssh='TERM=xterm-color ssh'
 alias mutt='TERM=screen-256color mutt'
+alias cat=bat
 
 # history settings
 setopt HIST_IGNORE_ALL_DUPS
