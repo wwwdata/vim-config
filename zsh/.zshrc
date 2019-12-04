@@ -110,6 +110,8 @@ export PATH=$PATH:~/.dotfiles/zsh/scripts
 # homebrew ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export BAT_THEME="Gruvbox-N"
 
 # use hub instead of git
 # eval "$(hub alias -s)"
