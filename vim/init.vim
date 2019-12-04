@@ -51,6 +51,7 @@ source ~/.dotfiles/vim/plug/airline.vim
 
 " Language
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
 let dart_format_on_save = 1
 let dart_style_guide = 2
