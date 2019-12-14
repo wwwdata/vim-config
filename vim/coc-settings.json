@@ -3,15 +3,6 @@
   "suggest.echodocSupport": true,
   "diagnostic.virtualText": true,
   "languageserver": {
-    "dart": {
-      "command": "dart",
-      "args": [
-        "/Users/benbieker/Development/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot",
-        "--lsp"
-      ],
-      "filetypes": ["dart"],
-      "disableDynamicRegister": true
-    },
     "golang": {
       "command": "gopls",
       "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
