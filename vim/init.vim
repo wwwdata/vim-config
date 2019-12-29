@@ -29,23 +29,14 @@ Plug 'vimwiki/vimwiki'
 Plug 'cbxsn/vim-gitmoji'
 Plug 'udalov/kotlin-vim'
 Plug 'tpope/vim-projectionist'
-
-" auto completion
-"Plug 'ncm2/ncm2'
-"Plug 'roxma/nvim-yarp'
-"Plug 'autozimu/LanguageClient-neovim', {
-    "\ 'branch': 'next',
-    "\ 'do': 'bash install.sh',
-    "\ }
-"Plug 'ncm2/ncm2-ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/echodoc.vim'
-
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'leafgarland/typescript-vim'
+Plug 'rhysd/vim-grammarous'
 
 source ~/.dotfiles/vim/plug/airline.vim
 
@@ -62,3 +53,4 @@ source ~/.dotfiles/vim/mappings.vim
 source ~/.dotfiles/vim/plug/autocompletion.vim
 source ~/.dotfiles/vim/plug/prettier.vim
 source ~/.dotfiles/vim/plug/vimwiki.vim
+source ~/.dotfiles/vim/plug/grammarous.vim
