@@ -15,7 +15,7 @@ function! g:grammarous#hooks.on_reset(errs) abort
     nunmap <buffer><C-p>
 endfunction
 
-nnoremap <leader>sc :GrammarousCheck<CR>
+nnoremap <leader>ss :GrammarousCheck<CR>
 nmap <leader>sr <Plug>(grammarous-reset)
 nmap <leader>sf <plug>(grammarous-fixit)
 nmap <leader>sF <plug>(grammarous-fixall)
