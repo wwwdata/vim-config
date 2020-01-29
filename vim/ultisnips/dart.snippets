@@ -16,6 +16,21 @@ import 'package:built_value/serializer.dart';
 part '${1:`!v expand('%:t:r')`.g.dart}';
 endsnippet
 
+snippet jsbuilt "create JsonSerializable class"
+import 'package:json_annotation/json_annotation.dart';
+
+part '${1:`!v expand('%:t:r')`.g.dart}';
+
+@JsonSerializable()
+class ${1:CLASS_NAME} {
+
+factory $1.fromJson(Map<String, dynamic> json) =>
+	_$$1FromJson(json);
+
+Map<String, dynamic> toJson() => _$$1ToJson(this);
+}
+endsnippet
+
 snippet stless "stateless widget class"
 class $1 extends StatelessWidget {
 	@override
