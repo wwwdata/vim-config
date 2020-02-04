@@ -123,6 +123,10 @@ alias mutt='TERM=screen-256color mutt'
 alias cat=bat
 alias fat='flutter analyze && flutter test'
 
+rcios() {
+	xcrun simctl io booted recordVideo $1
+}
+
 # history settings
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
