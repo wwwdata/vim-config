@@ -122,6 +122,7 @@ alias ssh='TERM=xterm-color ssh'
 alias mutt='TERM=screen-256color mutt'
 alias cat=bat
 alias fat='flutter analyze && flutter test'
+alias fwt='ls test/**/*.dart | entr -c flutter test /_'
 
 rcios() {
 	xcrun simctl io booted recordVideo $1
