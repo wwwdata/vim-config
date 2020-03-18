@@ -121,6 +121,7 @@ alias yip=yarn install --pure-lockfile
 alias ssh='TERM=xterm-color ssh'
 alias mutt='TERM=screen-256color mutt'
 alias cat=bat
+alias ls=exa
 alias fat='flutter analyze && flutter test'
 alias fwt='ls test/**/*.dart | entr -c flutter test /_'
 
