@@ -7,9 +7,11 @@ nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
 " toggle fold
 " nnoremap <Tab> za
 
-" easy-align
-nmap ga <Plug>(EasyAlign)
-xmap ga <Plug>(EasyAlign)
+if !exists('g:vscode')
+  " easy-align
+  nmap ga <Plug>(EasyAlign)
+  xmap ga <Plug>(EasyAlign)
+endif
 
 " quickfix mapping, nextfile jumps
 nnoremap <silent> <Up> :cprevious<CR>
@@ -33,26 +35,37 @@ nmap <leader>s :UltiSnipsEdit<CR>
 nnoremap <leader>rc :so ~/.config/nvim/init.vim<CR>
 
 " project
-nnoremap <silent> <leader>pt :NERDTreeToggle<CR>   " open a horizontal split and switch to it (,h)
-nnoremap <silent> <leader>pF :NERDTreeFind<CR>   " open a horizontal split and switch to it (,h)
-nnoremap <leader>pf :GitFiles<CR>
-nnoremap <leader>p/ :CocSearch 
-nnoremap <leader>pr :History<CR>
-nnoremap <leader>ps :Snippets<CR>
-nnoremap <leader>pc :Commands<CR>
+if !exists('g:vscode')
+  nnoremap <silent> <leader>pt :NERDTreeToggle<CR>   " open a horizontal split and switch to it (,h)
+  nnoremap <silent> <leader>pF :NERDTreeFind<CR>   " open a horizontal split and switch to it (,h)
+  nnoremap <leader>pf :GitFiles<CR>
+  nnoremap <leader>p/ :CocSearch 
+  nnoremap <leader>pr :History<CR>
+  nnoremap <leader>ps :Snippets<CR>
+  nnoremap <leader>pc :Commands<CR>
+endif
 
 " window
 nnoremap <leader>wv <C-w>v<C-w>l   " split vertically
 nnoremap <leader>wh <C-w>s<C-w>j   " split horizontally
+
+if exists('g:vscode')
+  nnoremap <silent> <C-h> <C-w>h
+  nnoremap <silent> <C-j> <C-w>j
+  nnoremap <silent> <C-k> <C-w>k
+  nnoremap <silent> <C-l> <C-w>l
+endif
 
 " file
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>ft :TagbarToggle<CR>
 
 " buffer
+command Bd :up | %bd | e#
 nnoremap <Leader><Tab> :e#<CR> " switch to last buffer
 nnoremap <leader>bb :Buffers<CR>
 nnoremap <leader>bd :bdelete<CR>
+nnoremap <leader>bD :Bd<CR>
 nnoremap <leader>bn :bnext<CR>
 nnoremap <leader>bp :bprevious<CR>
 nnoremap <leader>b/ :Lines<CR>
@@ -93,10 +106,12 @@ imap <D-e> <M-e>
 imap <D-b> <M-b>
 
 " fzf
-imap <c-x><c-l> <plug>(fzf-complete-line)
-imap <c-x><c-f> <plug>(fzf-complete-path)
-imap <c-x><c-j> <plug>(fzf-complete-file-ag)
-imap <c-x><c-k> <plug>(fzf-complete-word)
+if !exists('g:vscode')
+  imap <c-x><c-l> <plug>(fzf-complete-line)
+  imap <c-x><c-f> <plug>(fzf-complete-path)
+  imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+  imap <c-x><c-k> <plug>(fzf-complete-word)
+endif
 
 " gitmoji
 inoremap <expr> <C-X><C-E> gitmoji#complete()

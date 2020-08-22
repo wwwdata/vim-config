@@ -31,6 +31,58 @@ Map<String, dynamic> toJson() => _$$1ToJson(this);
 }
 endsnippet
 
+snippet frz "create freezed class"
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '${1:`!v expand('%:t:r')`.freezed.dart}';
+part '${1:`!v expand('%:t:r')`.g.dart}';
+
+@freezed
+abstract class ${1:CLASS_NAME} with _$$1 {
+	factory $1() = _$1;
+
+	factory $1.fromJson(Map<String, dynamic> json) => _$$1FromJson(json);
+}
+endsnippet
+
+snippet jsc "create JsonSerializable class"
+import 'package:json_annotation/json_annotation.dart';
+
+part '${1:`!v expand('%:t:r')`.g.dart}';
+
+@JsonSerializable()
+class ${1:CLASS_NAME} {
+	$1();
+
+	factory $1.fromJson(Map<String, dynamic> json) =>
+		_$$1FromJson(json);
+
+	Map<String, dynamic> toJson() => _$$1ToJson(this);
+}
+endsnippet
+
+snippet bloc "create bloc skeleton"
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '${0:`!v expand('%:t:r')`.freezed.dart}';
+
+class ${1:NAME}Bloc extends Bloc<$1Event, $1State> {
+	@override
+	$1State get initialState => throw UnimplementedError();
+
+	@override
+	Stream<$1State> mapEventToState($1Event event) async* {}
+}
+
+abstract class $1Event {}
+
+@freezed
+abstract class $1State with _$$1State {
+	factory $1State() = _$1State;
+}
+endsnippet
+
 snippet stless "stateless widget class"
 class $1 extends StatelessWidget {
 	@override
@@ -94,4 +146,19 @@ endsnippet
 
 snippet rel "remote localizations"
 final localizations = RemoteLocalizations.of(context);
+endsnippet
+
+snippet asn "assert not null"
+assert($1 != null)
+endsnippet
+
+snippet asn, "assert not null"
+assert($1 != null),
+endsnippet
+
+snippet mgold "match golden"
+await expectLater(
+	find.byWidget(widgetSetup.widget),
+	matchesGoldenFile('goldens/$1'),
+);
 endsnippet

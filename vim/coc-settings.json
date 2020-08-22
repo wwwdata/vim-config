@@ -2,11 +2,6 @@
   "codeLens.enable": true,
   "suggest.echodocSupport": true,
   "diagnostic.virtualText": true,
-  "languageserver": {
-    "golang": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"]
-    }
-  }
+  "go.enable": true,
+  "suggest.languageSourcePriority": 99
 }

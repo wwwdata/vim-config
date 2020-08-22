@@ -4,9 +4,6 @@ window:
     columns: 80
     lines: 24
 
-# Display tabs using this many cells (changes require restart)
-tabspaces: 8
-
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
 
@@ -249,6 +246,7 @@ key_bindings:
   - { key: Equals,   mods: Control, action: IncreaseFontSize             }
   - { key: Subtract, mods: Control, action: DecreaseFontSize             }
   - { key: Q, mods: Control, chars: "\x11" }
+  - { key: F,      mods: Command|Control,    action: ToggleFullscreen }
 
 
 # Mouse bindings
