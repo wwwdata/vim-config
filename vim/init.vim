@@ -22,7 +22,6 @@ if !exists('g:vscode')
   Plug 'natebosch/dartlang-snippets'
   Plug 'kshenoy/vim-signature'
   Plug 'vimwiki/vimwiki'
-  Plug 'cbxsn/vim-gitmoji'
   Plug 'udalov/kotlin-vim'
   Plug 'tpope/vim-projectionist'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
