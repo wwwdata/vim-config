@@ -1608,7 +1608,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>167 240 796 486 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>9 0 3074 1577 0 0 3840 1577 </string>
+	<string>3 5 1786 1087 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 969 650 517 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2486,24 +2486,24 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.7</string>
+		<string>3.4.0beta3</string>
 		<string>3.3.10beta4</string>
 		<string>3.3.12beta3</string>
-		<string>3.3.10beta3</string>
+		<string>3.3.12beta2</string>
 		<string>3.3.8beta5</string>
 		<string>3.2.0beta8</string>
-		<string>3.3.10beta2</string>
-		<string>3.4.0beta3</string>
+		<string>3.3.12beta1</string>
+		<string>3.3.7</string>
 		<string>3.4.0beta2</string>
 		<string>3.3.12</string>
 		<string>3.4.0beta4</string>
 		<string>3.3.8beta4</string>
 		<string>3.3.9beta1</string>
 		<string>3.3.10beta1</string>
-		<string>3.3.11beta1</string>
-		<string>3.3.12beta1</string>
 		<string>3.4.0beta1</string>
-		<string>3.3.12beta2</string>
+		<string>3.3.11beta1</string>
+		<string>3.3.10beta2</string>
+		<string>3.3.10beta3</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -2514,7 +2514,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {3840, 1600}}</string>
 		<key>topLeft</key>
-		<string>{1241, 1233}</string>
+		<string>{1211, 1249}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
@@ -2525,7 +2525,7 @@
 	<key>NoSyncLastOSVersion</key>
 	<string>Version 10.15.6 (Build 19G2021)</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>92</integer>
+	<integer>94</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3426,7 +3426,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-08-20T06:11:43Z</date>
+	<date>2020-08-24T11:27:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -3502,6 +3502,6 @@
 	<key>metalMaximizeThroughput</key>
 	<false/>
 	<key>preferIntegratedGPU</key>
-	<false/>
+	<true/>
 </dict>
 </plist>

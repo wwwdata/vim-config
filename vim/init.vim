@@ -16,7 +16,6 @@ if !exists('g:vscode')
   Plug 'jiangmiao/auto-pairs'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'mattn/emmet-vim'
-  Plug 'tpope/vim-fugitive'
   Plug 'junegunn/gv.vim'
   Plug 'airblade/vim-gitgutter'
   Plug 'SirVer/Ultisnips'
@@ -46,6 +45,7 @@ if !exists('g:vscode')
 endif
 
 " Shared plugins with VSCode
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
@@ -63,3 +63,6 @@ if !exists('g:vscode')
   source ~/.dotfiles/vim/plug/grammarous.vim
 endif
 
+if exists('g:vscode')
+  source ~/.dotfiles/vim/vscode.vim
+endif
