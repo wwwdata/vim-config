@@ -1,9 +1,18 @@
 " Load Plugins with vim-plug
 call plug#begin('~/.dotfiles/vim/plugged')
-if !exists('g:vscode')
 
+" Shared plugins with VSCode
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
+Plug 'terryma/vim-multiple-cursors'
+
+if exists('g:vscode')
+  source ~/.dotfiles/vim/vscode.vim
+else
   " Colorscheme
-  Plug 'morhetz/gruvbox'
+  Plug 'sainnhe/gruvbox-material'
   Plug 'junegunn/seoul256.vim'
 
   " General
@@ -39,29 +48,19 @@ if !exists('g:vscode')
   " Language
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
+  Plug 'nvim-treesitter/nvim-treesitter'
   let dart_format_on_save = 1
   let dart_style_guide = 2
 endif
 
-" Shared plugins with VSCode
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdcommenter'
-Plug 'terryma/vim-multiple-cursors'
-
 call plug#end()
 
-source ~/.dotfiles/vim/settings.vim
-source ~/.dotfiles/vim/mappings.vim
-
 if !exists('g:vscode')
+  source ~/.dotfiles/vim/settings.vim
+  source ~/.dotfiles/vim/mappings.vim
   source ~/.dotfiles/vim/plug/autocompletion.vim
   source ~/.dotfiles/vim/plug/prettier.vim
   source ~/.dotfiles/vim/plug/vimwiki.vim
   source ~/.dotfiles/vim/plug/grammarous.vim
-endif
-
-if exists('g:vscode')
-  source ~/.dotfiles/vim/vscode.vim
+  source ~/.dotfiles/vim/plug/treesitter.vim
 endif

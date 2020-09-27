@@ -7,11 +7,9 @@ nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
 " toggle fold
 " nnoremap <Tab> za
 
-if !exists('g:vscode')
-  " easy-align
-  nmap ga <Plug>(EasyAlign)
-  xmap ga <Plug>(EasyAlign)
-endif
+" easy-align
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
 
 " quickfix mapping, nextfile jumps
 nnoremap <silent> <Up> :cprevious<CR>
@@ -35,26 +33,22 @@ nmap <leader>s :UltiSnipsEdit<CR>
 nnoremap <leader>rc :so ~/.config/nvim/init.vim<CR>
 
 " project
-if !exists('g:vscode')
-  nnoremap <silent> <leader>pt :NERDTreeToggle<CR>   " open a horizontal split and switch to it (,h)
-  nnoremap <silent> <leader>pF :NERDTreeFind<CR>   " open a horizontal split and switch to it (,h)
-  nnoremap <leader>pf :GitFiles<CR>
-  nnoremap <leader>p/ :CocSearch 
-  nnoremap <leader>pr :History<CR>
-  nnoremap <leader>ps :Snippets<CR>
-  nnoremap <leader>pc :Commands<CR>
-endif
+nnoremap <silent> <leader>pt :NERDTreeToggle<CR>   " open a horizontal split and switch to it (,h)
+nnoremap <silent> <leader>pF :NERDTreeFind<CR>   " open a horizontal split and switch to it (,h)
+nnoremap <leader>pf :GitFiles<CR>
+nnoremap <leader>p/ :CocSearch 
+nnoremap <leader>pr :History<CR>
+nnoremap <leader>ps :Snippets<CR>
+nnoremap <leader>pc :Commands<CR>
 
 " window
 nnoremap <leader>wv <C-w>v<C-w>l   " split vertically
 nnoremap <leader>wh <C-w>s<C-w>j   " split horizontally
 
-if exists('g:vscode')
-  nnoremap <silent> <C-h> <C-w>h
-  nnoremap <silent> <C-j> <C-w>j
-  nnoremap <silent> <C-k> <C-w>k
-  nnoremap <silent> <C-l> <C-w>l
-endif
+nnoremap <silent> <C-h> <C-w>h
+nnoremap <silent> <C-j> <C-w>j
+nnoremap <silent> <C-k> <C-w>k
+nnoremap <silent> <C-l> <C-w>l
 
 " file
 nnoremap <leader>ff :Files<CR>
