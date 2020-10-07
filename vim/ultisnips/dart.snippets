@@ -61,37 +61,6 @@ class ${1:CLASS_NAME} {
 }
 endsnippet
 
-snippet bloc "create bloc skeleton"
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-
-part '${0:`!v expand('%:t:r')`.freezed.dart}';
-
-class ${1:NAME}Bloc extends Bloc<$1Event, $1State> {
-	@override
-	$1State get initialState => throw UnimplementedError();
-
-	@override
-	Stream<$1State> mapEventToState($1Event event) async* {}
-}
-
-abstract class $1Event {}
-
-@freezed
-abstract class $1State with _$$1State {
-	factory $1State() = _$1State;
-}
-endsnippet
-
-snippet stless "stateless widget class"
-class $1 extends StatelessWidget {
-	@override
-	Widget build(BuildContext context) {
-		return Container($0);
-	}
-}
-endsnippet
-
 snippet mtest "unit test file"
 import 'package:flutter_test/flutter_test.dart';
 
@@ -112,14 +81,6 @@ String get $1 {
 }
 endsnippet
 
-snippet al "app localizations"
-AppLocalizations.of(context).
-endsnippet
-
-snippet mt "main theme"
-MainTheme.of(context).
-endsnippet
-
 snippet wtest "widget test file"
 import 'package:flutter_test/flutter_test.dart';
 
@@ -137,15 +98,7 @@ testWidgets('$1', (WidgetTester tester) async {
 endsnippet
 
 snippet mock "create mockito class"
-class Mocked$1 extends Mock implements $1 {}
-endsnippet
-
-snippet ath "appTheme"
-final appTheme = Provider.of<AppTheme>(context);
-endsnippet
-
-snippet rel "remote localizations"
-final localizations = RemoteLocalizations.of(context);
+class Mock$1 extends Mock implements $1 {}
 endsnippet
 
 snippet asn "assert not null"
@@ -161,4 +114,25 @@ await expectLater(
 	find.byWidget(widgetSetup.widget),
 	matchesGoldenFile('goldens/$1'),
 );
+endsnippet
+
+snippet cb "cubit"
+import 'package:bloc/bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '${1/.*/\l$0/}_state.dart';
+part '${1:`!v expand('%:t:r')`.freezed.dart}';
+
+class ${1:CLASS_NAME}Cubit extends Cubit<$1State> {
+	$1Cubit() : super(_Initial());
+}
+endsnippet
+
+snippet bs "bloc/cubit state"
+part of '${1/.*/\l$0/}_cubit.dart';
+
+@freezed
+abstract class ${1:CLASS_NAME}State with _$$1State {
+	const factory $1State.inital() = _Initial;
+}
 endsnippet
