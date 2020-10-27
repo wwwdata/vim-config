@@ -136,3 +136,12 @@ abstract class ${1:CLASS_NAME}State with _$$1State {
 	const factory $1State.inital() = _Initial;
 }
 endsnippet
+
+snippet stless "stateless widget class"
+class $1 extends StatelessWidget {
+	@override
+		Widget build(BuildContext context) {
+			return Container($0);
+		}
+}
+endsnippet
