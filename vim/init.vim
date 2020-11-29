@@ -43,8 +43,6 @@ else
   Plug 'rhysd/vim-grammarous'
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
-  source ~/.dotfiles/vim/plug/airline.vim
-
   " Language
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
