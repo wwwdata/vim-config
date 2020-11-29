@@ -71,3 +71,33 @@ let g:UltiSnipsJumpForwardTrigger	= "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger	= "<c-k>"
 let g:UltiSnipsRemoveSelectModeMappings = 0
 let g:UltiSnipsSnippetsDir="~/.dotfiles/vim/ultisnips"
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified', 'cocstatus' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'gitbranch': 'FugitiveHead',
+      \ },
+      \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+      \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
+      \ }
+
+autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+
+function! LightlineFugitive()
+    try
+        if expand('%:t') !~? 'Tagbar\|Gundo\|NERD' && &ft !~? 'vimfiler' && exists('*FugitiveHead')
+            let mark = ''  " edit here for cool mark
+            let branch = FugitiveHead()
+            return branch !=# '' ? mark.branch : ''
+        endif
+    catch
+    endtry
+    return ''
+endfunction
+
+let g:lightline.colorscheme = 'gruvbox_material'

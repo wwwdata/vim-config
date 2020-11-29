@@ -34,6 +34,7 @@ else
   Plug 'udalov/kotlin-vim'
   Plug 'tpope/vim-projectionist'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'itchyny/lightline.vim'
   Plug 'Shougo/denite.nvim'
   Plug 'Shougo/echodoc.vim'
   Plug 'prettier/vim-prettier', {
