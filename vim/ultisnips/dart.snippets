@@ -97,6 +97,24 @@ testWidgets('$1', (WidgetTester tester) async {
 });
 endsnippet
 
+snippet grp "unit test group"
+group('$1', () {
+	$0
+});
+endsnippet
+
+snippet tst "unit test"
+test('$1', () {
+	$0
+});
+endsnippet
+
+snippet tsta "async unit test"
+test('$1', () async {
+	$0
+});
+endsnippet
+
 snippet mock "create mockito class"
 class Mock$1 extends Mock implements $1 {}
 endsnippet
