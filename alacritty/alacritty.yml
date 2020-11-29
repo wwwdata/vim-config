@@ -244,7 +244,7 @@ key_bindings:
   - { key: D,        mods: Alt,     chars: "\x1bd"                       }
   - { key: Key0,     mods: Control, action: ResetFontSize                }
   - { key: Equals,   mods: Control, action: IncreaseFontSize             }
-  - { key: Subtract, mods: Control, action: DecreaseFontSize             }
+  - { key: Minus,    mods: Control, action: DecreaseFontSize             }
   - { key: Q, mods: Control, chars: "\x11" }
   - { key: F,      mods: Command|Control,    action: ToggleFullscreen }
 
