@@ -37,9 +37,6 @@ else
   Plug 'itchyny/lightline.vim'
   Plug 'Shougo/denite.nvim'
   Plug 'Shougo/echodoc.vim'
-  Plug 'prettier/vim-prettier', {
-        \ 'do': 'yarn install',
-        \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
   Plug 'leafgarland/typescript-vim'
   Plug 'rhysd/vim-grammarous'
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -58,7 +55,6 @@ if !exists('g:vscode')
   source ~/.dotfiles/vim/settings.vim
   source ~/.dotfiles/vim/mappings.vim
   source ~/.dotfiles/vim/plug/autocompletion.vim
-  source ~/.dotfiles/vim/plug/prettier.vim
   source ~/.dotfiles/vim/plug/vimwiki.vim
   source ~/.dotfiles/vim/plug/grammarous.vim
   source ~/.dotfiles/vim/plug/treesitter.vim
