@@ -140,4 +140,8 @@ source $HOME/.dotfiles/zsh/private.zsh
 # open files
 ulimit -n 10000
 
+# do not write jrnl entries to history
+setopt HIST_IGNORE_SPACE
+alias jrnl=" jrnl"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
